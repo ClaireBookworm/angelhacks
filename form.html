@@ -37,13 +37,18 @@
                     <input type="text" name="lname" class="input" placeholder="Last Name"><br><br>
                     <input type="text" name="email" class="input" placeholder="Email"><br><br>
                     <input type="text" name="school" class="input" placeholder="School"><br><br>
-                    Gender:
+                    <label>Gender: <select name="role[]" multiple>
+                        <option value="female" type = "radio" class="radio">Female</option>
+                        <option value="male" type = "radio" class="radio">Male</option>
+                        <option value="otherG" type = "radio" class="radio">Other</option>
+                      </select></label>
+                    <!--Gender:
                         <input type="radio" name="gender" value="female" class="radio"> Female
                         <input type="radio" name="gender" value="male" class="radio"> Male
-                        <input type="radio" name="gender" value="other" class="radio"> Other<br><br>
+                        <input type="radio" name="gender" value="other" class="radio"> Other<br><br>-->
                     <textarea name="comment" rows="5" cols="40" class="textarea" placeholder="Anything else you would like us to know?"></textarea>
                     <br><br><br>
-                    <input type="submit" class="button" onclick="application();">
+                    <button type="submit" class="button">Submit!</button>
                 </form>
             </div>
         </section>
