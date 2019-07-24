@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.cheddar {
+  font-size: 150%;
+}
+
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
