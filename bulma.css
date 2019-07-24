@@ -429,7 +429,8 @@ span {
 }
 
 strong {
-  color: #363636;
+  /*color: #363636;*/
+  color: currentColor;
   font-weight: 700;
 }
 
