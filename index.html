@@ -10,6 +10,106 @@
     <link rel="icon" href="assets/angelhackslogo_1.png">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <style>
+        .bounce {
+            display: inline-block;
+            position: relative;
+            -moz-animation: bounce 0.5s infinite linear;
+            -o-animation: bounce 0.5s infinite linear;
+            -webkit-animation: bounce 0.5s infinite linear;
+            animation: bounce 0.5s infinite linear;
+            color: white;
+        }
+
+        @-webkit-keyframes bounce {
+            0% {
+                top: 0;
+            }
+
+            50% {
+                top: -0.2em;
+            }
+
+            70% {
+                top: -0.3em;
+            }
+
+            100% {
+                top: 0;
+            }
+        }
+
+        @-moz-keyframes bounce {
+            0% {
+                top: 0;
+            }
+
+            50% {
+                top: -0.2em;
+            }
+
+            70% {
+                top: -0.3em;
+            }
+
+            100% {
+                top: 0;
+            }
+        }
+
+        @-o-keyframes bounce {
+            0% {
+                top: 0;
+            }
+
+            50% {
+                top: -0.2em;
+            }
+
+            70% {
+                top: -0.3em;
+            }
+
+            100% {
+                top: 0;
+            }
+        }
+
+        @-ms-keyframes bounce {
+            0% {
+                top: 0;
+            }
+
+            50% {
+                top: -0.2em;
+            }
+
+            70% {
+                top: -0.3em;
+            }
+
+            100% {
+                top: 0;
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                top: 0;
+            }
+
+            50% {
+                top: -0.2em;
+            }
+
+            70% {
+                top: -0.3em;
+            }
+
+            100% {
+                top: 0;
+            }
+        }
+
         .is-unicorn {
             background-image: linear-gradient(to right, #bbcceb, #e4c0f5) !important;
         }
@@ -17,6 +117,15 @@
         .img-center {
             margin-left: auto;
             margin-right: auto;
+        }
+        #particles-js canvas {
+            position: absolute;
+            height: 100%;
+            z-index: -1;
+            background-image: linear-gradient(to right, #bbcceb, #e4c0f5) !important;
+        }
+        .particles-js-canvas-el {
+            height: 150% !important;
         }
     </style>
 </head>
@@ -35,7 +144,7 @@
         </div>
         <div class="navbar-menu is-unicorn">
             <div class="navbar-start">
-                <a data-scroll href="#main" class="navbar-item has-text-white">
+                <a data-scroll href="#particles-js" class="navbar-item has-text-white">
                     Home
                 </a>
                 <a data-scroll href="#schedule" class="navbar-item has-text-white">
@@ -56,7 +165,7 @@
             </div>
         </div>
     </nav>
-    <section id="main" class="hero is-large is-unicorn">
+    <section class="hero is-fullheight" id="particles-js">
         <div class="hero-body has-text-centered">
             <div class="columns">
                 <div class="column">
@@ -80,7 +189,7 @@
             <p class="subtitle">Coming Soon...</p>
         </div>
     </section>
-    <section id="signup" class="hero is-light">
+    <section id="signup" class="hero is-unicorn">
         <div class="hero-body has-text-centered is-flex" style="justify-content: center">
             <form name="application" method="POST" action="https://formspree.io/claire@angelhacks.org"
                 style="width: 75vw;">
@@ -135,7 +244,7 @@
             </form>
         </div>
     </section>
-    <section id="team" class="hero is-warning is-bold">
+    <section id="team" class="hero is-link is-bold">
         <div class="hero-body has-text-centered">
             <h1 class="title">Our Team</h1>
             <h1 class="subtitle">Our team is the Ad-Astra <a href="https://hackclub.com">Hack Club</a>! The main team is
@@ -150,16 +259,40 @@
                         </div>
                         <div class="card-content">
                             <figure class="image img-center" style="height: 200px;width:200px;">
-                                <img src="https://dvpc.tk/assets/portrait.jpg"
-                                    class="is-rounded">
+                                <img src="https://dvpc.tk/assets/portrait.jpg" class="is-rounded">
                             </figure>
-                            <p>Hi! I am Neel Redkar and I love to program! I've been programming since I was about 9 and have been since then. I am a 9th grader at DVHS.</p>
+                            <p>Hi! I am Neel Redkar and I love to program! I've been programming since I was about 9 and
+                                have been since then. I am a 9th grader at DVHS.</p>
                         </div>
                         <div class="card-footer">
                             <a class="card-footer-item" href="mailto:neel.redkar@outlook.com"><i class="fas fa-envelope"
                                     style="margin-right: 10px"></i>Email</a>
                             <a class="card-footer-item" href="https://github.com/Hacker719"><i class="fab fa-github"
                                     style="margin-right: 10px"></i>GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Jacob Haap
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image img-center" style="height: 200px;width:200px;">
+                                <img src="assets/jacob-profile.jpg" class="is-rounded">
+                            </figure>
+                            <p>Hi! I am Neel Redkar and I love to program! I've been programming since I was about 9 and
+                                have been since then. I am a 9th grader at DVHS.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="mailto:jacobhaap@gmail.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="https://github.com/jacobhaap"><i class="fab fa-github"
+                                    style="margin-right: 10px"></i>GitHub</a>
+                            <a class="card-footer-item" href="https://www.linkedin.com/in/jacobhaap/"><i
+                                    class="fab fa-linkedin" style="margin-right: 10px"></i>Linkedin</a>
                         </div>
                     </div>
                 </div>
@@ -175,7 +308,9 @@
                                 <img src="https://avatars2.githubusercontent.com/u/42789870?s=460&v=4"
                                     class="is-rounded">
                             </figure>
-                            <p>Hey, my name is Evan Nishi, and I'm a student at Las Lomas. I love programming with machine learning and always love a challenge. I also love helping the programming community, and help organize events!</p>
+                            <p>Hey, my name is Evan Nishi, and I'm a student at Las Lomas. I love programming with
+                                machine learning and always love a challenge. I also love helping the programming
+                                community, and help organize events!</p>
                         </div>
                         <div class="card-footer">
                             <a class="card-footer-item" href="mailto:evan@evannishi.com"><i class="fas fa-envelope"
@@ -185,10 +320,11 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    <section id="judges" class="hero is-dark is-bold">
+    <section id="judges" class="hero is-unicorn is-bold">
         <div class="hero-body has-text-centered">
             <h1 class="title">Judges</h1>
             <h1 class="subtitle">Say hello to our wonderful judges!</h1>
@@ -401,6 +537,7 @@
             <p class="title is-6">Licensed under GPLv3</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
     <script src="index.js"></script>
 </body>
 

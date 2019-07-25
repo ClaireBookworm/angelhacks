@@ -1,19 +1,4 @@
-function application() {
-    document.getElementById("application").innerHTML = "Thanks for applying!"
-}
-(function () {
-    var burger = document.querySelector('#nav-toggle');
-    var menu = document.querySelector('.navbar-menu');
-    burger.addEventListener('click', function () {
-        burger.classList.toggle('is-active');
-        menu.classList.toggle('is-active');
-    });
-})();
-var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 450
-});
-
-settings = {
+{
     "particles": {
       "number": {
         "value": 38,
@@ -29,7 +14,7 @@ settings = {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#c4d0eb"
+          "color": "#000000"
         },
         "polygon": {
           "nb_sides": 5
@@ -86,11 +71,11 @@ settings = {
       "detect_on": "window",
       "events": {
         "onhover": {
-          "enable": false,
+          "enable": true,
           "mode": "repulse"
         },
         "onclick": {
-          "enable": false,
+          "enable": true,
           "mode": "push"
         },
         "resize": true
@@ -123,4 +108,3 @@ settings = {
     },
     "retina_detect": true
   }
-particlesJS('particles-js', settings);
