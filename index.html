@@ -1,142 +1,387 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html class="has-navbar-fixed-top">
+
+<head>
+    <title>AngelHacks</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AngelHacks</title>
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">-->
-    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="AngelHacks/index.js"></script>
+    <link rel="icon" href="assets/angelhackslogo_1.png">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <style>
-    .signup {
-      background: #ff5493;
-      color: rgb(70, 66, 66);
-    }
-    .signup:hover {
-      background: #1f191a;
-      color: white;
-    }
+        .is-unicorn {
+            background-image: linear-gradient(to right, #bbcceb, #e4c0f5) !important;
+        }
 
+        .img-center {
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
-  </head>
-  <body>
-    <div class="navbar">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="https://angelhacks.org">
-                <img src="https://i.imgur.com/OK038in.png" width="50">
-              </a>
-          
-              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-          
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-                <a class="navbar-item" src ="AngelHacks/index.html">
-                  Home
-                </a>
+</head>
 
-                <a class="navbar-item" src = "AngelHacks/form.html">
-                  Sign up
+<body>
+    <nav class="navbar is-unicorn is-dark is-fixed-top">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="assets/angelhackslogo_1.png">
+            </a>
+            <a id="nav-toggle" class="navbar-burger burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu is-unicorn">
+            <div class="navbar-start">
+                <a data-scroll href="#main" class="navbar-item has-text-white">
+                    Home
                 </a>
-                
-                <!--<a class="navbar-item" src = "Angelhacks/info.html">
-                  Info
-                </a>-->
-          
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
-                    More
-                  </a>
-          
-                  <div class="navbar-dropdown">
-                    <a class="navbar-item" name="hackathons">
-                      Hackathons
-                    </a>
-                    <a class="navbar-item" name="judges">
-                      Judges
-                    </a>
-                    <a class="navbar-item" name="team">
-                      About the Team
-                    </a>
-                    <!--<hr class="navbar-divider">
-                    <a class="navbar-item">
-                      Report an issue
-                    </a>-->
-                  </div>
-                </div>
-              </div>
-          
-              <div class="navbar-end">
+                <a data-scroll href="#schedule" class="navbar-item has-text-white">
+                    Schedule
+                </a>
+                <a data-scroll href="#team" class="navbar-item has-text-white">
+                    The Team
+                </a>
+                <a data-scroll href="#judges" class="navbar-item has-text-white">
+                    Judges
+                </a>
+            </div>
+
+            <div class="navbar-end">
                 <div class="navbar-item">
-                  <div class="buttons">
-                    <a class="button is-primary" src = "AngelHacks/form.html">
-                      <strong>Sign up</strong>
-                    </a>
-                    <!--<a class="button is-light">
-                      Log in
-                    </a>-->
-                  </div>
+                    <a data-scroll href="#signup" class="button is-outlined is-link is-inverted">Sign Up</a>
                 </div>
-              </div>
             </div>
-          </nav>
-    </div>
-    <section class="section header">
-      <div class="container" style="text-align: center;">
-        <h1 class="title" style ="font-size:200%">
-          AngelHacks
-        </h1>
-        <h2 class = "subtitle">The first high school hackathon in LA!</h2>
-        <p>
-          Sign up <strong>Today</strong>!
-        </p>
-      </div>
-      <br>
-      <div class="container" style="text-align:center;">
-        <form action="form.html">
-            <button class="signup button" type="submit" src="AngelHacks/form.html">Sign Up</button>
-        </form>
-      </div>
+        </div>
+    </nav>
+    <section id="main" class="hero is-large is-unicorn">
+        <div class="hero-body has-text-centered">
+            <div class="columns">
+                <div class="column">
+                    <img src="assets/angelhackslogo_1.png">
+                </div>
+                <div class="column">
+                    <h1 class="title is-1">AngelHacks</h1>
+                    <br><br>
+                    <h1 class="subtitle">The <strong>first</strong> highschool hackathon in Los Angeles!</h1>
+                    <p>[what is a hackathon/what makes angelhacks imp]Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Laudantium architecto nostrum illum dolor itaque porro in ad nesciunt libero
+                        impedit obcaecati iusto officia aliquid, neque alias, deleniti voluptatibus excepturi a.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="section">
-      <div class = "container">
-        <a href="hackathons"></a>
-        <h1 class="title is-dark cheddar">
-          So... what IS a Hackathon?
-        </h1>
-        <p>
-            AngelHacks is a 12-hour event where 100 programmers, artists, designers, & other high schoolers from across Los Angeles can come together to build apps & games. We provide workshops, mentorship, free meals & drinks. Students then present their projects and win prizes in many different categories!
-        </p>
-      </div>
-      <div class = "container">
-        <a href="#judges"></a>
-        <h1 class="title is-dark cheddar">
-          Judges
-        </h1>
-        <p>
-          We are inviting judges from across LA and across fields -- from graphic designers to teachers to data scientists to entrepreneurs! Check back soon to learn more!
-        </p>
-      </div>
-      <div class = "container">
-        <a href="#team"></a>
-        <h1 class="title is-dark cheddar">
-          About the Team
-        </h1>
-        <p>
-          We are Ad Astra Hack Club at Hawthorne, CA!
-        </p>
-        <img src="">
-      </div>
-    </section>
-  </body>
-</html>
 
-<!--
-<a name="linktotop">Back To Top</a>
-<a href="#linktotop"></a>-->
+    <section id="schedule" class="hero is-medium is-link">
+        <div class="hero-body has-text-centered">
+            <h1 class="title">Schedule/Sponsors/Food/Prizes</h1>
+            <p class="subtitle">Coming Soon...</p>
+        </div>
+    </section>
+    <section id="signup" class="hero is-light">
+        <div class="hero-body has-text-centered is-flex" style="justify-content: center">
+            <form name="application" method="POST" action="https://formspree.io/claire@angelhacks.org"
+                style="width: 75vw;">
+                <h1 class="title">Sign Up!</h1>
+                <div class="field">
+                    <label class="label">First Name</label>
+                    <div class="control">
+                        <input class="input" type="text" name="fname" placeholder="First Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Last Name</label>
+                    <div class="control">
+                        <input class="input" type="text" name="lname" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="email" name="email" placeholder="Email" required>
+                        <span class="icon is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">School</label>
+                    <div class="control">
+                        <input class="input" type="text" name="school" placeholder="School">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Gender</label>
+                    <div class="control  has-text-centered">
+                        <span class="select" class="width:100%">
+                            <select name="gender">
+                                <option value="male" selected>Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Anything Else?</label>
+                    <div class="control">
+                        <textarea name="comment" rows="5" cols="40" class="textarea"
+                            placeholder="Anything else you would like us to know?"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="button is-success">Submit!</button>
+            </form>
+        </div>
+    </section>
+    <section id="team" class="hero is-warning is-bold">
+        <div class="hero-body has-text-centered">
+            <h1 class="title">Our Team</h1>
+            <h1 class="subtitle">Our team is the Ad-Astra <a href="https://hackclub.com">Hack Club</a>! The main team is
+            </h1>
+            <div class="columns is-multiline">
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Neel Redkar
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image is-128x128 img-center">
+                                <img src="https://i.pinimg.com/originals/c8/b2/a5/c8b2a590115ad8076611eece5caa34bf.jpg"
+                                    class="is-rounded">
+                            </figure>
+                            <p>I am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am
+                                GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI
+                                am GrootI am GrootI am GrootI am Groot </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="peppa.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="peppa.com"><i class="fab fa-linkedin"
+                                    style="margin-right: 10px"></i>Linkdin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="judges" class="hero is-dark is-bold">
+        <div class="hero-body has-text-centered">
+            <h1 class="title">Judges</h1>
+            <h1 class="subtitle">Say hello to our wonderful judges!</h1>
+            <div class="columns is-multiline">
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Head Judge: Peppa
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image is-128x128 img-center">
+                                <img src="https://i.pinimg.com/originals/c8/b2/a5/c8b2a590115ad8076611eece5caa34bf.jpg"
+                                    class="is-rounded">
+                            </figure>
+                            <p>I am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am
+                                GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI
+                                am GrootI am GrootI am GrootI am Groot </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="peppa.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="peppa.com"><i class="fab fa-linkedin"
+                                    style="margin-right: 10px"></i>Linkdin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Not Head Judge: Peppa
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image is-128x128 img-center">
+                                <img src="https://i.pinimg.com/originals/c8/b2/a5/c8b2a590115ad8076611eece5caa34bf.jpg"
+                                    class="is-rounded">
+                            </figure>
+                            <p>I am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am
+                                GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI
+                                am GrootI am GrootI am GrootI am Groot </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="peppa.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="peppa.com"><i class="fab fa-linkedin"
+                                    style="margin-right: 10px"></i>Linkdin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Not Head Judge: Peppa
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image is-128x128 img-center">
+                                <img src="https://i.pinimg.com/originals/c8/b2/a5/c8b2a590115ad8076611eece5caa34bf.jpg"
+                                    class="is-rounded">
+                            </figure>
+                            <p>I am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am
+                                GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI
+                                am GrootI am GrootI am GrootI am Groot </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="peppa.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="peppa.com"><i class="fab fa-linkedin"
+                                    style="margin-right: 10px"></i>Linkdin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Not Head Judge: Peppa
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image is-128x128 img-center">
+                                <img src="https://i.pinimg.com/originals/c8/b2/a5/c8b2a590115ad8076611eece5caa34bf.jpg"
+                                    class="is-rounded">
+                            </figure>
+                            <p>I am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am
+                                GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI
+                                am GrootI am GrootI am GrootI am Groot </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="peppa.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="peppa.com"><i class="fab fa-linkedin"
+                                    style="margin-right: 10px"></i>Linkdin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Not Head Judge: Peppa
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image is-128x128 img-center">
+                                <img src="https://i.pinimg.com/originals/c8/b2/a5/c8b2a590115ad8076611eece5caa34bf.jpg"
+                                    class="is-rounded">
+                            </figure>
+                            <p>I am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am
+                                GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI
+                                am GrootI am GrootI am GrootI am Groot </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="peppa.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="peppa.com"><i class="fab fa-linkedin"
+                                    style="margin-right: 10px"></i>Linkdin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Not Head Judge: Peppa
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image is-128x128 img-center">
+                                <img src="https://i.pinimg.com/originals/c8/b2/a5/c8b2a590115ad8076611eece5caa34bf.jpg"
+                                    class="is-rounded">
+                            </figure>
+                            <p>I am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am
+                                GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI
+                                am GrootI am GrootI am GrootI am Groot </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="peppa.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="peppa.com"><i class="fab fa-linkedin"
+                                    style="margin-right: 10px"></i>Linkdin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Not Head Judge: Peppa
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image is-128x128 img-center">
+                                <img src="https://i.pinimg.com/originals/c8/b2/a5/c8b2a590115ad8076611eece5caa34bf.jpg"
+                                    class="is-rounded">
+                            </figure>
+                            <p>I am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am
+                                GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI
+                                am GrootI am GrootI am GrootI am Groot </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="peppa.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="peppa.com"><i class="fab fa-linkedin"
+                                    style="margin-right: 10px"></i>Linkdin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Not Head Judge: Peppa
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image is-128x128">
+                                <img src="https://i.pinimg.com/originals/c8/b2/a5/c8b2a590115ad8076611eece5caa34bf.jpg"
+                                    class="is-rounded">
+                            </figure>
+                            <p>I am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am
+                                GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI am GrootI
+                                am GrootI am GrootI am GrootI am Groot </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="peppa.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="peppa.com"><i class="fab fa-linkedin"
+                                    style="margin-right: 10px"></i>Linkdin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container has-text-centered">
+            <figure class="image is-48x48 img-center">
+                <img src="assets/angelhackslogo_1.png">
+            </figure>
+            <p class="title is-5">AngelHacks 2019</p>
+            <p class="title is-6">Look under the hood at <a href="https://github.com/ClaireBookworm/angelhacks">our
+                    GitHub</a></p>
+            <p class="title is-6">Have any questions? Contact us at <a
+                    href="mailto:claire@angelhacks.org">claire@angelhacks.org</a></p>
+            <p class="title is-6">Licensed under GPLv3</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
