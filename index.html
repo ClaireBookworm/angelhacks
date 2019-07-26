@@ -1,143 +1,270 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html class="has-navbar-fixed-top">
+
+<head>
+    <title>AngelHacks</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AngelHacks</title>
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">-->
-    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="AngelHacks/index.js"></script>
+    <link rel="icon" href="assets/angelhackslogo_1.png">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <style>
-    .signup {
-      background: #ff5493;
-      color: rgb(70, 66, 66);
-    }
-    .signup:hover {
-      background: #1f191a;
-      color: white;
-    }
 
+        .is-unicorn {
+            background-image: linear-gradient(to right, #94e0ee, #ffa8f3) !important;
+        }
+
+        .img-center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #particles-js canvas {
+            position: absolute;
+            height: 100%;
+            z-index: -1;
+            background-image: linear-gradient(to right, #94e0ee, #ffa8f3) !important;
+        }
+        .particles-js-canvas-el {
+            height: 150% !important;
+        }
     </style>
-  </head>
-  <body>
-    <div class="navbar">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="https://angelhacks.org">
-                <img src="https://i.imgur.com/OK038in.png" width="50">
-              </a>
-          
-              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-          
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-                <a class="navbar-item" src ="AngelHacks/index.html">
-                  Home
-                </a>
+</head>
 
-                <a class="navbar-item" src = "AngelHacks/form.html">
-                  Sign up
+<body>
+    <nav class="navbar is-unicorn is-dark is-fixed-top">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="assets/angelhackslogo_1.png">
+            </a>
+            <a id="nav-toggle" class="navbar-burger burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu is-unicorn">
+            <div class="navbar-start">
+                <a data-scroll href="#particles-js" class="navbar-item has-text-white">
+                    Home
                 </a>
-                
-                <!--<a class="navbar-item" src = "Angelhacks/info.html">
-                  Info
-                </a>-->
-          
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
-                    More
-                  </a>
-          
-                  <div class="navbar-dropdown">
-                    <a class="navbar-item" name="hackathons">
-                      Hackathons
-                    </a>
-                    <a class="navbar-item" href="#judges" style="text-decoration: none;">
-                      Judges
-                    </a>
-                    <a class="navbar-item" name="team">
-                      About the Team
-                    </a>
-                    <!--<hr class="navbar-divider">
-                    <a class="navbar-item">
-                      Report an issue
-                    </a>-->
-                  </div>
-                </div>
-              </div>
-          
-              <div class="navbar-end">
+                <a data-scroll href="#schedule" class="navbar-item has-text-white">
+                    Schedule
+                </a>
+                <a data-scroll href="#team" class="navbar-item has-text-white">
+                    The Team
+                </a>
+                <a data-scroll href="#judges" class="navbar-item has-text-white">
+                    Judges
+                </a>
+            </div>
+
+            <div class="navbar-end">
                 <div class="navbar-item">
-                  <div class="buttons">
-                    <a class="button is-primary" src = "AngelHacks/form.html">
-                      <strong>Sign up</strong>
-                    </a>
-                    <!--<a class="button is-light">
-                      Log in
-                    </a>-->
-                  </div>
+                    <a data-scroll href="#signup" class="button is-outlined is-link is-inverted">Sign Up</a>
                 </div>
-              </div>
             </div>
-          </nav>
-    </div>
-    <section class="section header">
-      <div class="container" style="text-align: center;">
-        <h1 class="title is-1" style ="font-size:200%">
-          AngelHacks
-        </h1>
-        <h2 class = "subtitle">The first high school hackathon in LA!</h2>
-        <p>
-          Sign up <strong>Today</strong>!
-        </p>
-      </div>
-      <br>
-      <div class="container" style="text-align:center;">
-        <form action="form.html">
-            <button class="signup button" type="submit" src="AngelHacks/form.html">Sign Up</button>
-        </form>
-      </div>
+        </div>
+    </nav>
+    <section class="hero" id="particles-js" style="height:100vh;width:100vw;">
+        <div class="hero-body has-text-centered">
+                    <figure class="img img-center">
+                        <img src="https://files.slack.com/files-pri/TLF0L1LLQ-FLF19LW83/transparent_logo.png" style="height:300px !important;">
+                    </figure>
+                    <h1 class="title is-4">The <strong>first</strong> highschool hackathon in Los Angeles!</h1>
+                    <p>[what is a hackathon/what makes angelhacks imp]Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Laudantium architecto nostrum illum dolor itaque porro in ad nesciunt libero
+                        impedit obcaecati iusto officia aliquid, neque alias, deleniti voluptatibus excepturi a.</p>
+            </div>
+        </div>
     </section>
-    <section class="section">
-      <div class = "container">
-        <a href="hackathons"></a>
-        <h1 class="title is-2 is-dark cheddar">
-          So... what IS a Hackathon?
-        </h1>
-        <p>
-            AngelHacks is a 12-hour event where 100 programmers, artists, designers, & other high schoolers from across Los Angeles can come together to build apps & games. We provide workshops, mentorship, free meals & drinks. Students then present their projects and win prizes in many different categories!
-        </p>
-      </div>
-      <div class = "container">
-        <h1 class="title is-2 is-dark cheddar">
-          <a name = "judges" style="is-dark">
-          Judges
-          </a>
-        </h1>
-        <p>
-          We are inviting judges from across LA and across fields -- from graphic designers to teachers to data scientists to entrepreneurs! Check back soon to learn more!
-        </p>
-      </div>
-      <div class = "container">
-        <a href="#team"></a>
-        <h1 class="title is-2 is-dark cheddar">
-          About the Team
-        </h1>
-        <p>
-          We are Ad Astra Hack Club at Hawthorne, CA!
-        </p>
-        <img src="">
-      </div>
-    </section>
-  </body>
-</html>
 
-<!--
-<a name="linktotop">Back To Top</a>
-<a href="#linktotop"></a>-->
+    <section id="schedule" class="hero is-medium" style="background-color: #eb5f48 !important;">
+        <div class="hero-body has-text-centered">
+            <h1 class="title has-text-white">Schedule/Sponsors/Food/Prizes</h1>
+            <p class="subtitle has-text-white">Coming Soon...</p>
+        </div>
+    </section>
+    <section id="signup" class="hero is-dark" style="background-color: #689dae !important;">
+        <div class="hero-body has-text-centered is-flex" style="justify-content: center;">
+            <form name="application" data-netlify="true"
+                style="width: 75vw; color: white !important;">
+                <h1 class="title">Sign Up!</h1>
+                <div class="field">
+                    <label class="label has-text-white">First Name</label>
+                    <div class="control">
+                        <input class="input" type="text" name="fname" placeholder="First Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label has-text-white">Last Name</label>
+                    <div class="control">
+                        <input class="input" type="text" name="lname" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label has-text-white">Email</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="email" name="email" placeholder="Email" required>
+                        <span class="icon is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label has-text-white">School</label>
+                    <div class="control">
+                        <input class="input" type="text" name="school" placeholder="School">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label has-text-white">Gender</label>
+                    <div class="control  has-text-centered">
+                        <span class="select" class="width:100%">
+                            <select name="gender">
+                                <option value="male" selected>Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label has-text-white">Anything Else?</label>
+                    <div class="control">
+                        <textarea name="comment" rows="5" cols="40" class="textarea"
+                            placeholder="Anything else you would like us to know?"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="button is-success">Submit!</button>
+            </form>
+        </div>
+    </section>
+    <section id="team" class="hero is-dark" style="background-color: #eb5f48 !important" >
+        <div class="hero-body has-text-centered">
+            <h1 class="title">Our Team</h1>
+            <h1 class="subtitle">Our team is the Ad-Astra <a href="https://hackclub.com">Hack Club</a>! The main team is
+            </h1>
+            <div class="columns is-multiline">
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Neel Redkar Tech/Outreach
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image img-center" style="height: 200px;width:200px;">
+                                <img src="https://dvpc.tk/assets/portrait.jpg" class="is-rounded">
+                            </figure>
+                            <p>Hi! I am Neel Redkar and I love to program! I've been programming since I was about 9 and
+                                have been since then. I am a 9th grader at DVHS.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="mailto:neel.redkar@outlook.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="https://github.com/Hacker719"><i class="fab fa-github"
+                                    style="margin-right: 10px"></i>GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Jacob Haap
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image img-center" style="height: 200px;width:200px;">
+                                <img src="assets/jacob-profile.jpg" class="is-rounded">
+                            </figure>
+                            <p>Hi! I am Neel Redkar and I love to program! I've been programming since I was about 9 and
+                                have been since then. I am a 9th grader at DVHS.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="mailto:jacobhaap@gmail.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="https://github.com/jacobhaap"><i class="fab fa-github"
+                                    style="margin-right: 10px"></i>GitHub</a>
+                            <a class="card-footer-item" href="https://www.linkedin.com/in/jacobhaap/"><i
+                                    class="fab fa-linkedin" style="margin-right: 10px"></i>Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Evan Nishi
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image img-center" style="height: 200px;width:200px; padding: 15px;">
+                                <img src="https://avatars2.githubusercontent.com/u/42789870?s=460&v=4"
+                                    class="is-rounded">
+                            </figure>
+                            <p>Hey, my name is Evan Nishi, and I'm a student at Las Lomas. I love programming with
+                                machine learning and always love a challenge. I also love helping the programming
+                                community, and help organize events!</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="mailto:evan@evannishi.com"><i class="fas fa-envelope"
+                                    style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="https://github.com/pers0nz"><i class="fab fa-github"
+                                    style="margin-right: 10px"></i>GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1 class="card-header-title">
+                                        Yasper De Jong
+                                </h1>
+                            </div>
+                            <div class="card-content">
+                                <figure class="image img-center" style="height: 200px;width:200px; padding: 15px;">
+                                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e856b795-c5a1-48d8-a9cc-a447d53f441d/dap6427-f0bfc90f-b74d-4cac-afac-08d1afb4ee1f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U4NTZiNzk1LWM1YTEtNDhkOC1hOWNjLWE0NDdkNTNmNDQxZFwvZGFwNjQyNy1mMGJmYzkwZi1iNzRkLTRjYWMtYWZhYy0wOGQxYWZiNGVlMWYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.uLCqj1V5KaW6ym34wv3hIbf8O322MDNp-NqLU8Wei4A"
+                                        class="is-rounded">
+                                </figure>
+                                <p> Hi! I'm Yasper, and I'm a junior and a CS club co-leader at Agoura High School. I've been coding since middle school doing systems programming and game dev/design. I'm also a jazz saxophone player and an Emacs enthusiast.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="card-footer-item" href="mailto:eyasperdejong+hack@gmail.com"><i class="fas fa-envelope"
+                                        style="margin-right: 10px"></i>Email</a>
+                                <a class="card-footer-item" href="https://github.com/y-dejong"><i class="fab fa-github"
+                                        style="margin-right: 10px"></i>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="judges" class="hero is-dark" style="background-color: #689dae !important;">
+        <div class="hero-body has-text-centered">
+            <h1 class="title">Judges</h1>
+            <h1 class="subtitle">Coming soon....</h1>
+            <div class="columns is-multiline">
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container has-text-centered">
+            <figure class="image is-48x48 img-center">
+                <img src="assets/angelhackslogo_1.png">
+            </figure>
+            <p class="title is-5">AngelHacks 2019</p>
+            <p class="title is-6">Look under the hood at <a href="https://github.com/ClaireBookworm/angelhacks">our
+                    GitHub</a></p>
+            <p class="title is-6">Have any questions? Contact us at <a
+                    href="mailto:claire@angelhacks.org">claire@angelhacks.org</a></p>
+            <p class="title is-6">Licensed under GPLv3</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
