@@ -1,4 +1,5 @@
 # Welcome to AngelHacks!
+## AngelHacks is a place where students from all talents come together for a friendly competition geared towards improving social wellfare!
 Interested? Visit angelhacks.org!
 
 <img src="https://i.imgur.com/OK038in.png" width="100px"></img>
