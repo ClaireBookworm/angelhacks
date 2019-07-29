@@ -21,10 +21,11 @@ $("#submit").click(function () {
 	"other":document.getElementById("comment").value,
 	"email":document.getElementById("email").value
   },
-  function(data, status){
-	document.getElementsByName("name").value = "";
-	document.getElementsByName("school").value = "";
-	  document.getElementsByName("comment").value = "";
+  function (data) {
+	document.getElementById("name").value = "";
+	document.getElementById("school").value = "";
+	document.getElementById("comment").value = "";
+  	document.getElementById("email").value = "";
   });
 })
 
