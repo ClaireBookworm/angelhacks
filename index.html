@@ -92,19 +92,19 @@
     </section>
     <section id="signup" class="hero is-dark" style="background-color: #689dae !important;">
         <div class="hero-body has-text-centered is-flex" style="justify-content: center;">
-            <form name="application"
+            <div name="application"
                 style="width: 50vw; color: white !important;">
                 <h1 class="title">Sign Up!</h1>
                 <label class="label has-text-white">Full Name</label>
                 <div class="field is-grouped" style="justify-content: center;">
                     <div class="control">
-                        <input class="input" type="text" name="name" placeholder="Full Name" required>
+                        <input class="input" type="text" id="name"  name="name" placeholder="Full Name" required>
                     </div>
                 </div>
                 <div class="field">
                     <label class="label has-text-white">Email</label>
                     <div class="control has-icons-left">
-                        <input class="input" type="email" name="email" placeholder="Email" required>
+                        <input class="input" type="email" id="email"  name="email" placeholder="Email" required>
                         <span class="icon is-left">
                             <i class="fas fa-envelope"></i>
                         </span>
@@ -113,14 +113,14 @@
                 <div class="field">
                     <label class="label has-text-white">School</label>
                     <div class="control">
-                        <input class="input" type="text" name="school" placeholder="School">
+                        <input class="input" type="text" id="school"  name="school" placeholder="School">
                     </div>
                 </div>
                 <div class="field">
                     <label class="label has-text-white">Gender</label>
                     <div class="control  has-text-centered">
                         <span class="select" class="width:100%">
-                            <select name="gender">
+                            <select name="gender" id="gender">
                                 <option value="male" selected> </option>
                                 <option value="male" >Male</option>
                                 <option value="female">Female</option>
@@ -132,13 +132,13 @@
                 <div class="field">
                     <label class="label has-text-white">Anything Else?</label>
                     <div class="control">
-                        <textarea name="comment" rows="5" cols="40" class="textarea"
+                        <textarea name="comment" id="comment" rows="5" cols="40" class="textarea"
                             placeholder="Anything else you would like us to know?"></textarea>
                     </div>
                 </div>
-                <button type="submit" id="submit" class="button is-success">Submit!</button>
-            </form>
-        </div>
+		<button type="submit" id="submit" class="button is-success">Submit!</button>
+        	</div>
+	    </div>
     </section>
     <section id="judges" class="hero is-dark" style="background-color: #eb5f48 !important">
         <div class="hero-body has-text-centered">

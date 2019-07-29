@@ -15,10 +15,11 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 $("#submit").click(function () {
 	$.post("https://AngelHacks-Reg--hacker22.repl.co/addperson",
   	{
-    "Name":document.getElementsByName("name").value,
-       "School":document.getElementsByName("school").value,
-	"Gender":document.getElementsByName("gender").value,
-	"other":document.getElementsByName("comment").value
+    "Name":document.getElementById("name").value,
+       "School":document.getElementById("school").value,
+	"Gender":document.getElementById("gender").value,
+	"other":document.getElementById("comment").value,
+	"email":document.getElementById("email").value
   },
   function(data, status){
 	document.getElementsByName("name").value = "";
