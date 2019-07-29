@@ -13,16 +13,17 @@ var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 450
 });
 $("#submit").click(function () {
-	$.post("https://angelhacks-reg--hacker22.repl.co/addperson",
+	$.post("https://AngelHacks-Reg--hacker22.repl.co/addperson",
   	{
-    "First-Name":document.getElementsByName("fname").value,
-    "Last-Name":document.getElementsByName("lname").value,
-    "School":document.getElementsByName("school").value,
+    "Name":document.getElementsByName("name").value,
+       "School":document.getElementsByName("school").value,
 	"Gender":document.getElementsByName("gender").value,
 	"other":document.getElementsByName("comment").value
   },
   function(data, status){
-    alert("Data: " + data + "\nStatus: " + status);
+	document.getElementsByName("name").value = "";
+	document.getElementsByName("school").value = "";
+	  document.getElementsByName("comment").value = "";
   });
 })
 
