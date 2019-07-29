@@ -25,7 +25,7 @@
             position: absolute;
             height: 100%;
             z-index: -1;
-            background-image: linear-gradient(to right, #94e0ee, #ffa8f3) !important;
+            background-image: linear-gradient(to right,#486d79, #eb5f48) !important;
         }
         .particles-js-canvas-el {
             height: 150% !important;
@@ -96,11 +96,14 @@
             <div name="application"
                 style="width: 50vw; color: white !important;">
                 <h1 class="title">Sign Up!</h1>
-                <label class="label has-text-white">Full Name</label>
-                <div class="field is-grouped" style="justify-content: center;">
-                    <div class="control">
-                        <input class="input" type="text" id="name"  name="name" placeholder="Full Name" required>
+                <label class="label has-text-white">First & Last Name</label>
+                <div class="field is-grouped" style="justify-content:center;">
+                   <div class="control" style="width:20vw !important;">
+			   <input class="input" type="text" id="fname"  name="fname" placeholder="First  Name" required>
                     </div>
+		    <div class="control" style="width:20vw !important;">
+			    <input class="input" type="text" id="lname"  name="lname" placeholder="Last  Name" required>
+		    </div>
                 </div>
                 <div class="field">
                     <label class="label has-text-white">Email</label>
