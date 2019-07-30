@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="icon" href="assets/angelhackslogo_1.png">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <style>
-
         .is-unicorn {
             background-image: linear-gradient(to right, #94e0ee, #ffa8f3) !important;
         }
@@ -21,12 +21,14 @@
             margin-left: auto;
             margin-right: auto;
         }
+
         #particles-js canvas {
             position: absolute;
             height: 100%;
             z-index: -1;
-            background-image: linear-gradient(to right,#486d79, #eb5f48) !important;
+            background-image: linear-gradient(to right, #486d79, #eb5f48) !important;
         }
+
         .particles-js-canvas-el {
             height: 150% !important;
         }
@@ -34,7 +36,7 @@
 </head>
 
 <body>
-    <nav class="navbar is-light is-fixed-top" style="opacity: 0.85; " >
+    <nav class="navbar is-light is-fixed-top" style="opacity: 0.85; ">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
                 <img src="assets/angelhackslogo_1.png">
@@ -74,14 +76,16 @@
     </nav>
     <section class="hero" id="particles-js" style="height:100vh;width:100vw;">
         <div class="hero-body has-text-centered">
-                    <figure class="img is3by4 img-center" style="max-width:700px !important;">
-                        <img src="assets/transparent_logo.png">
-                    </figure>
-                    <h1 class="title is-4">The <strong>first</strong> social wellfare highschool hackathon in Los Angeles!</h1>
-                    <p class="title is-5">AngelHacks is a middle and highschool hackathon that works to help Los Angeles' social wellfare problems.</p>
-                    <br><br>
-                    <p>AngelHacks strives to empower students and show them that they can make a difference,</p><p> while getting students together to solve some of the most pressing problems in LA.</p>
-            </div>
+            <figure class="img is3by4 img-center" style="max-width:700px !important;">
+                <img src="assets/transparent_logo.png">
+            </figure>
+            <h1 class="title is-4">The <strong>first</strong> social wellfare highschool hackathon in Los Angeles!</h1>
+            <p class="title is-5">AngelHacks is a middle and highschool hackathon that works to help Los Angeles' social
+                wellfare problems.</p>
+            <br><br>
+            <p>AngelHacks strives to empower students and show them that they can make a difference,</p>
+            <p> while getting students together to solve some of the most pressing problems in LA.</p>
+        </div>
         </div>
     </section>
 
@@ -93,22 +97,21 @@
     </section>
     <section id="signup" class="hero is-dark" style="background-color: #689dae !important;">
         <div class="hero-body has-text-centered is-flex" style="justify-content: center;">
-            <div name="application"
-                style="width: 50vw; color: white !important;">
+            <form id="form" name="application" style="width: 50vw; color: white !important;">
                 <h1 class="title">Sign Up!</h1>
                 <label class="label has-text-white">First & Last Name</label>
                 <div class="field is-grouped" style="justify-content:center;">
-                   <div class="control" style="width:20vw !important;">
-			   <input class="input" type="text" id="fname"  name="fname" placeholder="First  Name" required>
+                    <div class="control" style="width:20vw !important;">
+                        <input class="input" type="text" id="fname" name="fname" placeholder="First  Name" required>
                     </div>
-		    <div class="control" style="width:20vw !important;">
-			    <input class="input" type="text" id="lname"  name="lname" placeholder="Last  Name" required>
-		    </div>
+                    <div class="control" style="width:20vw !important;">
+                        <input class="input" type="text" id="lname" name="lname" placeholder="Last  Name" required>
+                    </div>
                 </div>
                 <div class="field">
                     <label class="label has-text-white">Email</label>
                     <div class="control has-icons-left">
-                        <input class="input" type="email" id="email"  name="email" placeholder="Email" required>
+                        <input class="input" type="email" id="email" name="email" placeholder="Email" required>
                         <span class="icon is-left">
                             <i class="fas fa-envelope"></i>
                         </span>
@@ -117,7 +120,7 @@
                 <div class="field">
                     <label class="label has-text-white">School</label>
                     <div class="control">
-                        <input class="input" type="text" id="school"  name="school" placeholder="School">
+                        <input class="input" type="text" id="school" name="school" placeholder="School">
                     </div>
                 </div>
                 <div class="field">
@@ -126,7 +129,7 @@
                         <span class="select" class="width:100%">
                             <select name="gender" id="gender">
                                 <option value="male" selected> </option>
-                                <option value="male" >Male</option>
+                                <option value="male">Male</option>
                                 <option value="female">Female</option>
                                 <option value="other">Other</option>
                             </select>
@@ -140,20 +143,25 @@
                             placeholder="Anything else you would like us to know?"></textarea>
                     </div>
                 </div>
-		<button type="submit" id="submit" class="button is-success">Submit!</button>
-        	</div>
-	    </div>
+                <div class="field">
+                    <div class="control">
+                        <div class="g-recaptcha" data-sitekey="6LenNrAUAAAAAMaYapnTGF9VhuBgiCdfnazSpX1P"></div>
+                    </div>
+                </div>
+                <button type="submit" id="submit" class="button is-success">Submit!</button>
+            </form>
+        </div>
     </section>
     <section id="judges" class="hero is-dark" style="background-color: #eb5f48 !important">
         <div class="hero-body has-text-centered">
             <h1 class="title">Judges</h1>
             <h1 class="subtitle">Coming soon....</h1>
             <div class="columns is-multiline">
-                
+
             </div>
         </div>
     </section>
-    <section id="team" class="hero is-dark" style="background-color: #689dae !important;" >
+    <section id="team" class="hero is-dark" style="background-color: #689dae !important;">
         <div class="hero-body has-text-centered">
             <h1 class="title">Our Team</h1>
             <h1 class="subtitle">Our team is the Ad-Astra <a href="https://hackclub.com">Hack Club</a>! The main team is
@@ -170,7 +178,7 @@
                             <figure class="image img-center" style="height: 200px;width:200px;">
                                 <img src="https://dvpc.tk/assets/portrait.jpg" class="is-rounded">
                             </figure>
-			</div>
+                        </div>
                         <div class="card-footer">
                             <a class="card-footer-item" href="mailto:neel.redkar@outlook.com"><i class="fas fa-envelope"
                                     style="margin-right: 10px"></i>Email</a>
@@ -201,26 +209,25 @@
                     </div>
                 </div>
                 <div class="column is-one-quarter">
-                        <div class="card">
-                            <div class="card-header">
-                                <h1 class="card-header-title">
-                                        Yasper De Jong - Regional Coordinator
-                                </h1>
-                            </div>
-                            <div class="card-content">
-                                <figure class="image img-center" style="height: 200px;width:200px; padding: 15px;">
-                                    <img src="assets/yasper-profile.jpg"
-                                        class="is-rounded">
-                                </figure>
-                            </div>
-                            <div class="card-footer">
-                                <a class="card-footer-item" href="mailto:eyasperdejong+hack@gmail.com"><i class="fas fa-envelope"
-                                        style="margin-right: 10px"></i>Email</a>
-                                <a class="card-footer-item" href="https://github.com/y-dejong"><i class="fab fa-github"
-                                        style="margin-right: 10px"></i>GitHub</a>
-                            </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-header-title">
+                                Yasper De Jong - Regional Coordinator
+                            </h1>
+                        </div>
+                        <div class="card-content">
+                            <figure class="image img-center" style="height: 200px;width:200px; padding: 15px;">
+                                <img src="assets/yasper-profile.jpg" class="is-rounded">
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-footer-item" href="mailto:eyasperdejong+hack@gmail.com"><i
+                                    class="fas fa-envelope" style="margin-right: 10px"></i>Email</a>
+                            <a class="card-footer-item" href="https://github.com/y-dejong"><i class="fab fa-github"
+                                    style="margin-right: 10px"></i>GitHub</a>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </section>
