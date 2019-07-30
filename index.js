@@ -13,6 +13,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 450
 });
 document.getElementById("form").addEventListener("submit",(e)=> {
+  e.preventDefault();
 	$.post("https://AngelHacks-Reg--hacker22.repl.co/addperson",
   	{
     "First-Name":document.getElementById("fname").value,
