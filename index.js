@@ -14,7 +14,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 });
 document.getElementById("form").addEventListener("submit",(e)=> {
   e.preventDefault();
-	$.post("https://AngelHacks-Reg--hacker22.repl.co/addperson",
+	$.post("https://angelhacksreg.now.sh/addperson",
   	{
     "First-Name":document.getElementById("fname").value,
 	"Last-Name":document.getElementById("lname").value,
