@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-	new SmoothScroll('a[href*="#"]', { speed: 450 })
+	const firestore = firebase.firestore()
 	function application() {
 		document.getElementById('application').innerHTML =
 			'Thanks for applying!'
