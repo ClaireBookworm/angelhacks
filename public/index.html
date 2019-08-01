@@ -20,7 +20,7 @@
 		<title>AngelHacks</title>
 	</head>
 	<body>
-		<div id="top" aria-hidden="true"></div>
+		<div id="home" aria-hidden="true"></div>
 		<nav class="navbar is-light is-fixed-top">
 			<div class="navbar-brand">
 				<a class="navbar-item" href="/">
@@ -34,207 +34,137 @@
 			</div>
 			<div class="navbar-menu">
 				<div class="navbar-start">
-					<a data-scroll href="#top" class="navbar-item">Home</a>
-					<a data-scroll href="#schedule" class="navbar-item">Schedule</a>
-					<a data-scroll href="#team" class="navbar-item">Our Team</a>
-					<a data-scroll href="#judges" class="navbar-item">Judges</a>
+					<a href="#home" class="navbar-item">Home</a>
+					<a href="#team" class="navbar-item">Our Team</a>
 				</div>
 				<div class="navbar-end">
 					<div class="navbar-item">
-						<a data-scroll href="#signup" class="button is-outlined is-dark">Sign up</a>
+						<a href="#signup" class="button is-outlined is-dark">Sign up</a>
 					</div>
 				</div>
 			</div>
 		</nav>
-		<section class="hero" id="particles-js">
+		<section id="particles-js" class="hero main">
 			<div class="hero-body has-text-centered">
-				<figure class="img is3by4 img-center hero-image">
+				<figure class="is3by4 main-hero-image centered-image">
 					<img src="https://firebasestorage.googleapis.com/v0/b/angelhacks-0.appspot.com/o/static%2Ftransparent-logo-with-text.png?alt=media&token=ccd91d76-ff48-47f8-977c-515e4a7f3923">
 				</figure>
 				<p class="title is-5">A high school-focused hackathon working to give back to the Los Angeles community</p>
 				<br><br>
-				<p>AngelHacks strives to empower students to make a difference by</p>
-				<p>working together to solve LA's most pressing problems.</p>
+				<p class="main-subtitle">AngelHacks strives to empower students to make a difference by<br>working together to solve LA's most pressing problems.</p>
 			</div>
 		</section>
-
-		<section id="schedule" class="hero is-medium" style="background-color: #eb5f48 !important;">
-		<div class="hero-body has-text-centered">
-		<h1 class="title has-text-white">Schedule/Sponsors/Food/Prizes</h1>
-		<p class="subtitle has-text-white">Coming Soon...</p>
-		</div>
+		<section id="signup" class="hero is-dark sign-up">
+			<div class="hero-body is-flex">
+				<form class="sign-up">
+					<h1 class="title has-text-centered">Sign up</h1>
+					<div class="field">
+						<label class="label has-text-white">Name</label>
+						<div class="control has-icons-left">
+							<input class="input name-input" type="text" placeholder="Enter name" autocomplete="name" required>
+							<span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label has-text-white">Email</label>
+						<div class="control has-icons-left">
+							<input class="input email-input" type="email" placeholder="Enter email" autocomplete="email" required>
+							<span class="icon is-small is-left"><i class="fas fa-at"></i></span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label has-text-white">School</label>
+						<div class="control has-icons-left">
+							<input class="input school-input" type="text" placeholder="Enter school" required>
+							<span class="icon is-small is-left"><i class="fas fa-graduation-cap"></i></span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label has-text-white">Password</label>
+						<div class="control has-icons-left">
+							<input class="input school-input" type="password" placeholder="Enter password" autocomplete="new-password" required>
+							<span class="icon is-small is-left"><i class="fas fa-key"></i></span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label has-text-white">Comments</label>
+						<div class="control">
+							<textarea class="textarea comments-input" rows="5" cols="40" placeholder="Optional"></textarea>
+						</div>
+					</div>
+					<button class="button is-success is-medium submit is-centered" type="submit">Sign up</button>
+				</form>
+			</div>
 		</section>
-		<section id="signup" class="hero is-dark" style="background-color: #689dae !important;">
-		<div class="hero-body has-text-centered is-flex" style="justify-content: center;">
-		<form id="form" name="application" style="width: 50vw; color: white !important;">
-		<h1 class="title">Sign Up!</h1>
-		<label class="label has-text-white">First & Last Name</label>
-		<div class="field is-grouped" style="justify-content:center;">
-		<div class="control" style="width:20vw !important;">
-		<input class="input" type="text" id="fname" name="fname" placeholder="First  Name" required>
-		</div>
-		<div class="control" style="width:20vw !important;">
-		<input class="input" type="text" id="lname" name="lname" placeholder="Last  Name" required>
-		</div>
-		</div>
-		<div class="field">
-		<label class="label has-text-white">Email</label>
-		<div class="control has-icons-left">
-		<input class="input" type="email" id="email" name="email" placeholder="Email" required>
-		<span class="icon is-left">
-		<i class="fas fa-envelope"></i>
-		</span>
-		</div>
-		</div>
-		<div class="field">
-		<label class="label has-text-white">School</label>
-		<div class="control">
-		<input class="input" type="text" id="school" name="school" placeholder="School">
-		</div>
-		</div>
-		<div class="field">
-		<label class="label has-text-white">Gender</label>
-		<div class="control  has-text-centered">
-		<span class="select" class="width:100%">
-		<select name="gender" id="gender">
-		<option value="male" selected> </option>
-		<option value="male">Male</option>
-		<option value="female">Female</option>
-		<option value="other">Other</option>
-		</select>
-		</span>
-		</div>
-		</div>
-		<div class="field">
-		<label class="label has-text-white">Anything Else?</label>
-		<div class="control">
-		<textarea name="comment" id="comment" rows="5" cols="40" class="textarea"
-		placeholder="Anything else you would like us to know?"></textarea>
-		</div>
-		</div>
-		<div class="field">
-		<div class="control is-flex" style="justify-content: center;">
-		<div class="g-recaptcha" data-sitekey="6LenNrAUAAAAAMaYapnTGF9VhuBgiCdfnazSpX1P"></div>
-		</div>
-		</div>
-		<button type="submit" id="submit" class="button is-success">Submit!</button>
-		</form>
-		</div>
-		</section>
-		<section id="judges" class="hero is-dark" style="background-color: #eb5f48 !important">
-		<div class="hero-body has-text-centered">
-		<h1 class="title">Judges</h1>
-		<h1 class="subtitle">Coming soon....</h1>
-		<div class="columns is-multiline">
-
-		</div>
-		</div>
-		</section>
-		<section id="team" class="hero is-dark" style="background-color: #689dae !important;">
-		<div class="hero-body has-text-centered">
-		<h1 class="title">Our Team</h1>
-		<h1 class="subtitle">Our team is the Ad-Astra <a href="https://hackclub.com">Hack Club</a>! The main team is
-		</h1>
-
-		<div class="columns is-multiline">
-		<div class="column is-one-quarter">
-		<div class="card">
-		<div class="card-header">
-		<h1 class="card-header-title">
-		Claire Wang -- Executive Director
-		</h1>
-		</div>
-		<div class="card-content">
-		<figure class="image img-center" >
-		<img src="assets/claire_profile.jpg" class="is-rounded img-center" style="width:150px;height:200px;">
-		</figure>
-		</div>
-		<div class="card-footer">
-		<a class="card-footer-item" href="mailto:claire@angelhacks.org"><i class="fas fa-envelope"
-		style="margin-right: 10px"></i>Email</a>
-		<a class="card-footer-item" href="https://github.com/ClaireBookworm"><i class="fab fa-github"
-		style="margin-right: 10px"></i>GitHub</a>
-		</div>
-		</div>
-		</div>
-		<div class="column is-one-quarter">
-		<div class="card">
-		<div class="card-header">
-		<h1 class="card-header-title">
-		Neel Redkar - Tech/Outreach
-		</h1>
-		</div>
-		<div class="card-content">
-		<figure class="image img-center" style="height: 200px;width:200px;">
-		<img src="https://dvpc.tk/assets/portrait.jpg" class="is-rounded">
-		</figure>
-		</div>
-		<div class="card-footer">
-		<a class="card-footer-item" href="mailto:neel.redkar@outlook.com"><i class="fas fa-envelope"
-		style="margin-right: 10px"></i>Email</a>
-		<a class="card-footer-item" href="https://github.com/Hacker719"><i class="fab fa-github"
-		style="margin-right: 10px"></i>GitHub</a>
-		</div>
-		</div>
-		</div>
-		<div class="column is-one-quarter">
-		<div class="card">
-		<div class="card-header">
-		<h1 class="card-header-title">
-		Evan Nishi - Advisor
-		</h1>
-		</div>
-		<div class="card-content">
-		<figure class="image img-center" style="height: 200px;width:200px; padding: 15px;">
-		<img src="https://avatars2.githubusercontent.com/u/42789870?s=460&v=4"
-		class="is-rounded">
-		</figure>
-		</div>
-		<div class="card-footer">
-		<a class="card-footer-item" href="mailto:evan@evannishi.com"><i class="fas fa-envelope"
-		style="margin-right: 10px"></i>Email</a>
-		<a class="card-footer-item" href="https://github.com/pers0nz"><i class="fab fa-github"
-		style="margin-right: 10px"></i>GitHub</a>
-		</div>
-		</div>
-		</div>
-		<div class="column is-one-quarter">
-		<div class="card">
-		<div class="card-header">
-		<h1 class="card-header-title">
-		Yasper De Jong - Regional Coordinator
-		</h1>
-		</div>
-		<div class="card-content">
-		<figure class="image img-center" style="height: 200px;width:200px; padding: 15px;">
-		<img src="assets/yasper-profile.jpg" class="is-rounded">
-		</figure>
-		</div>
-		<div class="card-footer">
-		<a class="card-footer-item" href="mailto:eyasperdejong+hack@gmail.com"><i
-		class="fas fa-envelope" style="margin-right: 10px"></i>Email</a>
-		<a class="card-footer-item" href="https://github.com/y-dejong"><i class="fab fa-github"
-		style="margin-right: 10px"></i>GitHub</a>
-		</div>
-		</div>
-		</div>
-		</div>
-		</div>
+		<section id="team" class="hero is-dark our-team">
+			<div class="hero-body has-text-centered">
+				<h1 class="title our-team-title">Our Team</h1>
+				<div class="columns is-multiline">
+					<div class="column is-one-quarter">
+						<div class="card">
+							<div class="card-header">
+								<h1 class="card-header-title">Claire Wang - Executive Director</h1>
+							</div>
+							<div class="card-content">
+								<figure class="image">
+									<img src="https://firebasestorage.googleapis.com/v0/b/angelhacks-0.appspot.com/o/static%2Fclaire-profile-picture.jpg?alt=media&token=82b5ce7c-94e7-4b85-980e-40a0813fed20" class="is-rounded card-image centered-image">
+								</figure>
+							</div>
+							<div class="card-footer">
+								<a class="card-footer-item" href="mailto:claire@angelhacks.org"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email</a>
+								<a class="card-footer-item" href="https://github.com/ClaireBookworm"><i class="fab fa-github"></i>&nbsp;&nbsp;GitHub</a>
+							</div>
+						</div>
+					</div>
+					<div class="column is-one-quarter">
+						<div class="card">
+							<div class="card-header">
+								<h1 class="card-header-title">Evan Nishi - Advisor</h1>
+							</div>
+							<div class="card-content">
+								<figure class="image">
+									<img src="https://firebasestorage.googleapis.com/v0/b/angelhacks-0.appspot.com/o/static%2Fevan-nishi-profile-picture.png?alt=media&token=8a83bdb5-b177-46a4-adb9-9703949717ce" class="is-rounded card-image centered-image">
+								</figure>
+							</div>
+							<div class="card-footer">
+								<a class="card-footer-item" href="mailto:claire@angelhacks.org"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email</a>
+								<a class="card-footer-item" href="https://github.com/ClaireBookworm"><i class="fab fa-github"></i>&nbsp;&nbsp;GitHub</a>
+							</div>
+						</div>
+					</div>
+					<div class="column is-one-quarter">
+						<div class="card">
+							<div class="card-header">
+								<h1 class="card-header-title">Yasper De Jong - Regional Coordinator</h1>
+							</div>
+							<div class="card-content">
+								<figure class="image">
+									<img src="https://firebasestorage.googleapis.com/v0/b/angelhacks-0.appspot.com/o/static%2Fyasper-profile-picture.jpg?alt=media&token=36b6e8f0-481c-499a-abf1-6d3fe5c5f1da" class="is-rounded card-image centered-image">
+								</figure>
+							</div>
+							<div class="card-footer">
+								<a class="card-footer-item" href="mailto:eyasperdejong@gmail.com"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email</a>
+								<a class="card-footer-item" href="https://github.com/y-dejong"><i class="fab fa-github"></i>&nbsp;&nbsp;GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<footer class="footer">
-		<div class="container has-text-centered">
-		<figure class="image is-48x48 img-center">
-		<img src="assets/angelhackslogo_1.png">
-		</figure>
-		<p class="title is-5">AngelHacks 2019</p>
-		<p class="title is-6">Look under the hood at <a href="https://github.com/ClaireBookworm/angelhacks">our
-		GitHub</a></p>
-		<p class="title is-6">Have any questions? Contact us at <a
-		href="mailto:claire@angelhacks.org">claire@angelhacks.org</a></p>
-		<p class="title is-6">Licensed under GPLv3</p>
-		</div>
+			<div class="container has-text-centered">
+				<figure class="image is-48x48 centered-image">
+					<img src="https://firebasestorage.googleapis.com/v0/b/angelhacks-0.appspot.com/o/static%2Ftransparent-logo.png?alt=media&token=2ee68bf3-f95e-4e16-a4a7-94294defe0c2" class="centered-image">
+				</figure>
+				<br>
+				<p class="title is-5">AngelHacks 2019</p>
+				<p class="title is-6">Look under the hood at <a href="https://github.com/ClaireBookworm/angelhacks">our GitHub</a></p>
+				<p class="title is-6">Have any questions? Contact us at <a href="mailto:support@angelhacks.org">support@angelhacks.org</a></p>
+				<p class="title is-6">Licensed under MIT</p>
+			</div>
 		</footer>
 		<script src="/js/toggle-navbar-burger.js"></script>
+		<script src="/js/particles.js"></script>
 		<script src="/js/index.js"></script>
 	</body>
 </html>

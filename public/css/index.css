@@ -1,25 +1,50 @@
 .navbar {
 	opacity: 0.85;
 }
-section.hero {
+section.hero.main {
 	height: 100vh;
 	width: 100vw;
-	background-image: linear-gradient(to right, rgb(255, 171, 240, 0.5), rgb(41, 199, 255, 0.5));
+	background-image: linear-gradient(to right, rgba(255, 171, 240, 0.5), rgba(41, 199, 255, 0.5));
 }
-.hero-image {
+.main-hero-image {
 	max-width: 700px;
 }
-.is-unicorn {
-	background-image: linear-gradient(to right, #94e0ee, #ffa8f3) !important;
-}
-.img-center {
+.centered-image {
 	margin: auto;
+}
+.main-subtitle {
+	font-weight: bold;
+}
+section.hero.sign-up {
+	background-color: #689dae;
+}
+section.hero.sign-up .hero-body {
+	justify-content: center;
+}
+section.hero.sign-up form {
+	width: 50vw;
+	color: white;
+}
+section.hero.sign-up .field.is-grouped {
+	justify-content: center;
+}
+form.sign-up .button.submit {
+	font-weight: bold;
+}
+section.hero.our-team {
+	background-color: #689dae;
+}
+section.hero.our-team .card-image {
+	width: 200px;
+	height: 200px;
+}
+section.hero.our-team .our-team-title {
+	margin-bottom: 40px;
 }
 #particles-js canvas {
 	position: absolute;
-	height: 100%;
 	z-index: -1;
-	background-image: url(https://firebasestorage.googleapis.com/v0/b/angelhacks-0.appspot.com/o/static%2Fblurry-buildings.jpg?alt=media&token=b89d75a9-4a96-41a8-9ac0-24f96eb2a3d3) !important;
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/angelhacks-0.appspot.com/o/static%2Fblurry-buildings.jpg?alt=media&token=b89d75a9-4a96-41a8-9ac0-24f96eb2a3d3);
 	background-position: center;
 	background-size: cover;
 }
