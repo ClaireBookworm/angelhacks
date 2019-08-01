@@ -1,0 +1,28 @@
+.navbar {
+	opacity: 0.85;
+}
+section.hero {
+	height: 100vh;
+	width: 100vw;
+	background-image: linear-gradient(to right, rgb(255, 171, 240, 0.5), rgb(41, 199, 255, 0.5));
+}
+.hero-image {
+	max-width: 700px;
+}
+.is-unicorn {
+	background-image: linear-gradient(to right, #94e0ee, #ffa8f3) !important;
+}
+.img-center {
+	margin: auto;
+}
+#particles-js canvas {
+	position: absolute;
+	height: 100%;
+	z-index: -1;
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/angelhacks-0.appspot.com/o/static%2Fblurry-buildings.jpg?alt=media&token=b89d75a9-4a96-41a8-9ac0-24f96eb2a3d3) !important;
+	background-position: center;
+	background-size: cover;
+}
+.particles-js-canvas-el {
+	height: 150% !important;
+}
