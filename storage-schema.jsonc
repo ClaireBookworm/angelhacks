@@ -1,0 +1,7 @@
+{
+	"angelhacks-0.appspot.com (bucket)": {
+		"static (folder)": {
+			"abc123": "IMAGE_DATA" // Can only be changed from firebase console (Full size PNG)
+		}
+	}
+}
