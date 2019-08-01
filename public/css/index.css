@@ -1,6 +1,14 @@
 .navbar {
 	opacity: 0.85;
 }
+.navbar-auth-button {
+	font-weight: bold;
+	margin-left: 10px;
+}
+.navbar-auth-button.sign-up,
+.navbar-auth-button.sign-out {
+	margin-right: 10px;
+}
 section.hero.main {
 	height: 100vh;
 	width: 100vw;

@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const firestore = firebase.firestore()
+	
 	function application() {
 		document.getElementById('application').innerHTML =
 			'Thanks for applying!'
