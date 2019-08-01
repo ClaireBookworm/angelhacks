@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	const signOutButton = document.querySelector('.navbar-auth-button.sign-out')
 
 	const signOut = () => {
-		signOutButton.classList.add('is-loading')
+		setLoading(signOutButton)(true)
 		auth.signOut().then(() => {
-			signOutButton.classList.remove('is-loading')
+			setLoading(signOutButton)(false)
 			removeCookie('uid')
 			location.reload()
 		}).catch(() => {
-			signOutButton.classList.remove('is-loading')
+			setLoading(signOutButton)(false)
 			alert('An error occurred. Please try again')
 		})
 	}
