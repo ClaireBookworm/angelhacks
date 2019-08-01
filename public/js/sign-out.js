@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const auth = firebase.auth()
 	const signOutButton = document.querySelector('.navbar-auth-button.sign-out')
 
-	function signOut() {
+	const signOut = () => {
 		signOutButton.classList.add('is-loading')
 		auth.signOut().then(() => {
 			signOutButton.classList.remove('is-loading')
