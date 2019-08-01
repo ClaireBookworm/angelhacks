@@ -23,6 +23,3 @@ section.hero {
 	background-position: center;
 	background-size: cover;
 }
-.particles-js-canvas-el {
-	height: 150% !important;
-}
