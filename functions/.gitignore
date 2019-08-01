@@ -1,8 +1,4 @@
-## Compiled JavaScript files
-**/*.js
-**/*.js.map
-
-# Typescript v1 declaration files
+.runtimeconfig.json
+lib/
 typings/
-
 node_modules/
