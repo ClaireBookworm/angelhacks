@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					} else {
 						setLoading(signInButton)(false)
 						setCookie('uid')(user.uid)
-						location.reload()
+						location.href = '/'
 					}
 				} else if (isSignUp)
 					firestore.doc(`users/${user.uid}`).set(Object.assign({
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					}, signUpCommentsInput.value.length ? { comments: signUpCommentsInput.value } : {})).then(() => {
 						setLoading(signUpButton)(false)
 						setCookie('uid')(user.uid)
-						location.reload()
+						location.href = '/'
 					}).catch(() => {
 						setLoading(signUpButton)(false)
 						alert('There was a problem creating an account. Please try again')
