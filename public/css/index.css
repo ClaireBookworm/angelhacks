@@ -33,11 +33,10 @@ section.hero.sign-up form {
 	width: 50vw;
 	color: white;
 }
-section.hero.sign-up .field.is-grouped {
-	justify-content: center;
-}
 form.sign-up .button.submit {
 	font-weight: bold;
+	margin-top: 8px;
+	width: 150px;
 }
 section.hero.our-team {
 	background-color: #689dae;
