@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	let isSignUp = false
 
+	if (cookie('uid'))
+		document.querySelector('section.hero.sign-up').innerHTML = ''
+
 	auth.onAuthStateChanged(user =>
 		!isSignedIn && user
 			? firestore.doc(`users/${user.uid}`).get().then(doc => {
