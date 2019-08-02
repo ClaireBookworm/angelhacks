@@ -164,6 +164,35 @@
 				<p class="title is-6">Licensed under MIT</p>
 			</div>
 		</footer>
+		<div class="modal sign-in">
+			<div class="modal-background close-sign-in"></div>
+			<div class="modal-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><b>Sign in</b></p>
+					<button class="delete close-sign-in" aria-label="close"></button>
+				</header>
+				<section class="modal-card-body">
+					<div class="field">
+						<label class="label">Email</label>
+						<div class="control has-icons-left">
+							<input class="input email-input" type="email" placeholder="Enter email">
+							<span class="icon is-small is-left"><i class="fas fa-at"></i></span>
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">Password</label>
+						<div class="control has-icons-left">
+							<input class="input password-input" type="password" placeholder="Enter password">
+							<span class="icon is-small is-left"><i class="fas fa-key"></i></span>
+						</div>
+					</div>
+				</section>
+				<footer class="modal-card-foot">
+					<button class="button is-success submit" disabled><b>Sign in</b></button>
+					<button class="button close-sign-in">Cancel</button>
+				</footer>
+			</div>
+		</div>
 		<script src="/js/cookie.js"></script>
 		<script src="/js/set-loading.js"></script>
 		<script src="/js/navbar-auth-buttons.js"></script>

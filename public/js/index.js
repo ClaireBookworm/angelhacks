@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	const signUpPasswordInput = document.querySelector('section.hero.sign-up form.sign-up .password-input')
 	const signUpCommentsInput = document.querySelector('section.hero.sign-up form.sign-up .comments-input')
 	const signUpButton = document.querySelector('section.hero.sign-up form.sign-up .submit')
-	const signInEmailInput = document.querySelector('.abc') // Fix
-	const signInPasswordInput = document.querySelector('.abc') // Fix
-	const signInButton = document.querySelector('.abc') // Fix
+	const signInEmailInput = document.querySelector('.modal.sign-in .email-input')
+	const signInPasswordInput = document.querySelector('.modal.sign-in .password-input')
+	const signInButton = document.querySelector('.modal.sign-in .submit')
 
 	let isSignUp = false
 
@@ -65,12 +65,39 @@ document.addEventListener('DOMContentLoaded', () => {
 			signUpPasswordInput.value.length > 5
 		)
 	
+	const signIn = () => {
+		isSignUp = false
+		setLoading(signInButton)(true)
+		const email = signInEmailInput.value
+		auth.signInWithEmailAndPassword(email, signInPasswordInput.value).catch(() => {
+			setLoading(signInButton)(false)
+			alert(`Invalid email/password`)
+		})
+	}
+
+	const signInFieldsDidChange = () =>
+		signInButton.disabled = !(signInEmailInput.value.length && signInPasswordInput.value.length)
+	
 	const addSignUpFieldsDidChangeListener = element =>
 		element.addEventListener('input', signUpFieldsDidChange)
+	
+	const addSignInFieldsDidChangeListener = element =>
+		element.addEventListener('input', signInFieldsDidChange)
+
+	const showSignInModal = () =>
+		document.querySelector('.modal.sign-in').classList.add('is-active')
+
+	const hideSignInModal = () =>
+		document.querySelector('.modal.sign-in').classList.remove('is-active')
 
 	document.querySelector('section.hero.sign-up form.sign-up').addEventListener('submit', signUp)
 	addSignUpFieldsDidChangeListener(signUpNameInput)
 	addSignUpFieldsDidChangeListener(signUpEmailInput)
 	addSignUpFieldsDidChangeListener(signUpSchoolInput)
 	addSignUpFieldsDidChangeListener(signUpPasswordInput)
+	document.querySelector('.navbar-auth-button.sign-in').addEventListener('click', showSignInModal)
+	addSignInFieldsDidChangeListener(signInEmailInput)
+	addSignInFieldsDidChangeListener(signInPasswordInput)
+	document.querySelectorAll('.close-sign-in').forEach(element => element.addEventListener('click', hideSignInModal))
+	signInButton.addEventListener('click', signIn)
 })
