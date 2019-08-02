@@ -87,7 +87,7 @@ settings = {
         }
       },
       "line_linked": {
-        "enable": true,
+        "enable": false,
         "distance": 150,
         "color": "#ffffff",
         "opacity": 0.4,
@@ -95,7 +95,7 @@ settings = {
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 0,
         "direction": "none",
         "random": false,
         "straight": false,
