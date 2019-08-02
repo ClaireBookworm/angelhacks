@@ -1,4 +1,4 @@
-![Logo](https://firebasestorage.googleapis.com/v0/b/angelhacks-0.appspot.com/o/static%2Ftransparent-logo.png?alt=media&token=2ee68bf3-f95e-4e16-a4a7-94294defe0c2 | width=100)
+<img src="https://firebasestorage.googleapis.com/v0/b/angelhacks-0.appspot.com/o/static%2Ftransparent-logo.png?alt=media&token=2ee68bf3-f95e-4e16-a4a7-94294defe0c2" width="150">
 
 # Welcome to AngelHacks!
 
