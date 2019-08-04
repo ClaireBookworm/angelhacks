@@ -51,7 +51,7 @@ section.hero.our-team .our-team-title {
 #particles-js canvas {
 	position: absolute;
 	z-index: -1;
-	background-image: url(https://firebasestorage.googleapis.com/v0/b/angelhacks-0.appspot.com/o/static%2Fblurry-buildings.jpg?alt=media&token=b89d75a9-4a96-41a8-9ac0-24f96eb2a3d3);
+	background-image: url(/images/blurry-buildings.jpg);
 	background-position: center;
 	background-size: cover;
 }
