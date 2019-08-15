@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						location.href = '/'
 					}
 				} else if (isSignUp)
-					firestore.doc(`users/${user.uid}`).set(Object.assign({
+					return firestore.doc(`users/${user.uid}`).set(Object.assign({
 						name: signUpNameInput.value,
 						email: signUpEmailInput.value,
 						school: signUpSchoolInput.value
@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					setLoading(signInButton)(false)
 					alert(`A user already exists with email ${user.email}`)
 				}
+				return Promise.resolve()
 			})
 			: null
 	)
