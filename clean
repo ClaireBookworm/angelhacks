@@ -1,4 +1,4 @@
-case $1 in
+case "$1" in
 	'')
 		rm -rf **/*.log
 		rm -rf .firebase
