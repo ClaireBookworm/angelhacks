@@ -1,4 +1,4 @@
-case $1 in
+case "$1" in
 	'')
 		npm i -g npm
 		npm i -g firebase-tools
@@ -11,14 +11,22 @@ case $1 in
 		git add package.json package-lock.json
 		tsc
 		cd ..
-		git commit -m "Updated dependencies"
+		git commit -m 'Updated dependencies'
 		git push
 	;;
 	'-m'|'--minify')
 		./build
 		for path in $(find . -not \( -path ./node_modules -prune \) -not \( -path ./testing -prune \) -not \( -path ./functions/node_modules -prune \) -name '*.html')
 		do
-			node_modules/.bin/html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --minify-css true --minify-js true "$path" -o "$path"
+			node_modules/.bin/html-minifier --collapse-whitespace \
+											--remove-comments \
+											--remove-optional-tags \
+											--remove-redundant-attributes \
+											--remove-script-type-attributes \
+											--remove-style-link-type-attributes \
+											--minify-css true \
+											--minify-js true \
+											"$path" -o "$path"
 		done
 		for path in $(find . -not \( -path ./node_modules -prune \) -not \( -path ./testing -prune \) -not \( -path ./functions/node_modules -prune \) -name '*.css')
 		do
