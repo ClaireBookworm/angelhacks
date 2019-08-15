@@ -22,6 +22,6 @@ If you're not a middle or high schooler but still want to attend, please contact
 cd ~/Downloads && git clone https://github.com/ClaireBookworm/angelhacks.git && cd angelhacks && ./build -c
 ```
 
-## **Interested in Donatigng or Sponsoring?**
+## **Interested in Donating or Sponsoring?**
 
-Please contact claire@angelhacks.org. Thank you for your help!
+Please contact **<support@angelhacks.org>**. Thank you for your help!
