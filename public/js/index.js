@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const signInEmailInput = document.querySelector('.modal.sign-in .email-input')
 	const signInPasswordInput = document.querySelector('.modal.sign-in .password-input')
 	const signInButton = document.querySelector('.modal.sign-in .submit')
+	const signUpForm = document.querySelector('section.hero.sign-up form.sign-up')
 
 	let isSignUp = false
 
@@ -93,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const hideSignInModal = () =>
 		document.querySelector('.modal.sign-in').classList.remove('is-active')
 
-	document.querySelector('section.hero.sign-up form.sign-up').addEventListener('submit', signUp)
+	signUpForm ? signUpForm.addEventListener('submit', signUp) : undefined
 	addSignUpFieldsDidChangeListener(signUpNameInput)
 	addSignUpFieldsDidChangeListener(signUpEmailInput)
 	addSignUpFieldsDidChangeListener(signUpSchoolInput)
