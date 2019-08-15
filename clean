@@ -9,6 +9,6 @@ case $1 in
 		rm -rf **/node_modules
 	;;
 	*)
-		echo Invalid option $1
+		echo "Invalid option $1"
 	;;
 esac

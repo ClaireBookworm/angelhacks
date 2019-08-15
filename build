@@ -42,6 +42,6 @@ case "$1" in
 		./clean
 	;;
 	*)
-		echo Invalid option $1
+		echo "Invalid option $1"
 	;;
 esac
