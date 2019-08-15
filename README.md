@@ -24,4 +24,4 @@ cd ~/Downloads && git clone https://github.com/ClaireBookworm/angelhacks.git && 
 
 ## **Interested in Donatigng or Sponsoring?**
 
-Please contact claire@angelhacks.org
+Please contact claire@angelhacks.org. Thank you for your help!
