@@ -49,14 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 				return Promise.resolve()
 			})
-			: null
+			: Promise.resolve()
 	)
 
 	const signUp = () => {
 		isSignUp = true
 		setLoading(signUpButton)(true)
 		const email = signUpEmailInput.value
-		auth.createUserWithEmailAndPassword(email, signUpPasswordInput.value).catch(() => {
+		return auth.createUserWithEmailAndPassword(email, signUpPasswordInput.value).catch(() => {
 			setLoading(signUpButton)(false)
 			alert(`There is already a user with the email ${email}`)
 		})
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		isSignUp = false
 		setLoading(signInButton)(true)
 		const email = signInEmailInput.value
-		auth.signInWithEmailAndPassword(email, signInPasswordInput.value).catch(() => {
+		return auth.signInWithEmailAndPassword(email, signInPasswordInput.value).catch(() => {
 			setLoading(signInButton)(false)
 			alert(`Invalid email/password`)
 		})

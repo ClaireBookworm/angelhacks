@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const signOut = () => {
 		setLoading(signOutButton)(true)
-		auth.signOut().then(() => {
+		return auth.signOut().then(() => {
 			setLoading(signOutButton)(false)
 			removeCookie('uid')
 			location.reload()
