@@ -23,10 +23,18 @@ section.hero.main {
 .main-subtitle {
 	font-weight: bold;
 }
-section.hero.sign-up {
+section.hero.sign-up .hero-body, section.hero.about .hero-body, section.hero.faq .hero-body, section.hero.schedule .hero-body{
 	background-color: #689dae;
 }
-section.hero.sign-up .hero-body {
+.sm-icon {
+	color: white !important;
+	margin: 8px;
+}
+.sm-icon:hover {
+	color: #ddd !important;
+	transition: color 250ms;
+}
+section.hero.sign-up .hero-body{
 	justify-content: center;
 }
 section.hero.sign-up form {
@@ -40,6 +48,9 @@ form.sign-up .button.submit {
 }
 section.hero.our-team {
 	background-color: #689dae;
+}
+section.hero.our-team .card {
+	border-radius: 5% !important;
 }
 section.hero.our-team .card-image {
 	width: 200px;

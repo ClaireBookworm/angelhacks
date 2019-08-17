@@ -34,14 +34,13 @@
 			</div>
 			<div class="navbar-menu">
 				<div class="navbar-start">
-					<a href="#home" class="navbar-item">Home</a>
-					<a href="#team" class="navbar-item">Our Team</a>
 				</div>
 				<div class="navbar-end">
+					<a href="#home" class="navbar-item">Home</a>
+					<a href="#about" class="navbar-item">About</a>
+					<a href="#team" class="navbar-item">Our Team</a>
 					<div class="navbar-item">
-						<a class="button is-info navbar-auth-button sign-in">Sign in</a>
-						<a href="#signup" class="button is-success navbar-auth-button sign-up">Sign up</a>
-						<a class="button is-info is-hidden navbar-auth-button sign-out">Sign out</a>
+						<a href="#signup" class="button is-success navbar-auth-button sign-up">Register</a>
 					</div>
 				</div>
 			</div>
@@ -51,8 +50,35 @@
 				<figure class="is3by4 main-hero-image centered-image is-unselectable">
 					<img src="/images/transparent-logo-with-text.png">
 				</figure>
-				<p class="title is-5 is-unselectable">A high school-focused hackathon working to give back to the Los Angeles community</p>
-				<p class="main-subtitle is-unselectable"><br><br>AngelHacks strives to empower students to make a difference by<br>working together to solve LA's most pressing problems.</p>
+				<p class="title is-5 is-size-4 is-unselectable" style="font-size: 'Open Sans', sans-serif; margin-top: 30px !important;"><b>October 26, 2019</b></p><p class="title is-unselectable is-5 is-size-4" style="font-size: 'Open Sans', sans-serif; margin-top: -15px !important;"><b>Santa Monica, California</b></p>
+			</div>
+		</section>
+		<section id="about" class="hero is-dark about">
+			<div class="hero-body is-flex">
+				<div class="container">
+					<h1 class="title">About Us</h1>
+					<div class="columns ">
+						<div class="column is-two-thirds">
+							<p >Who are we? AngelHacks is a free, 12 hour coding competition for any high schooler who wants to attend! <b>AngelHacks strives to empower students to make a difference by working together to solve LA's most pressing problems</b>. In this short period of time, you will discover new friends and form a team, code an awesome project, and walk away with a ton of swag and prizes. </p>
+							<p style="margin-top:13px;">Founded by Claire Wang, our hackathon aims to inspire the community to engage in computer science together. The focus of this event will be making a difference on the community through programming and innovative projects. Don't know how to code? Attend a workshop run by an expert from both our sponsors and the local area.</p>
+						</div>
+						<div class="column is-one-third has-text-centered box" style="background-color: #6A95AD; box-shadow: 5px 10px; margin: 25px; margin-top: 0;">
+							<h1 class="is-size-4" style="color: white;">AngelHacks Media</h1>
+							<div class="columns is-mobile is-centered" style="margin-top: 10px">
+								<div class="column is-half has-text-centered">
+									<a class="sm-icon is-size-4" href="https://www.instagram.com/angelhacks.la/"><i class="fab fa-instagram"></i></a>
+									<br>
+									<a class="sm-icon is-size-4" href="https://twitter.com/hacks_angel"><i class="fab fa-twitter"></i></a>
+								</div>
+								<div class="column is-half has-text-centered">
+									<a class="sm-icon is-size-4" href="https://github.com/ClaireBookworm/angelhacks"><i class="fab fa-github"></i></a>
+									<br>
+									<a class="sm-icon is-size-4" href="mailto:support@angelhacks.org"><i class="fas fa-envelope"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section id="signup" class="hero is-dark sign-up">
@@ -81,20 +107,13 @@
 						</div>
 					</div>
 					<div class="field">
-						<label class="label has-text-white">Password</label>
-						<div class="control has-icons-left">
-							<input class="input password-input" type="password" placeholder="Enter password" autocomplete="new-password" required>
-							<span class="icon is-small is-left"><i class="fas fa-key"></i></span>
-						</div>
-					</div>
-					<div class="field">
 						<label class="label has-text-white">Comments</label>
 						<div class="control">
 							<textarea class="textarea comments-input" rows="5" cols="40" placeholder="Optional"></textarea>
 						</div>
 					</div>
 					<div class="has-text-centered">
-						<button class="button is-success is-medium submit is-centered" type="submit" disabled>Sign up</button>
+						<button class="button is-success is-medium submit is-centered" type="submit" disabled>Register</button>
 					</div>
 				</form>
 			</div>
@@ -139,16 +158,15 @@
 					<div class="column is-one-quarter">
 						<div class="card">
 							<div class="card-header">
-								<h1 class="card-header-title">Evan Nishi - Advisor</h1>
+								<h1 class="card-header-title">Ryan Catullo - Financial Coordinator</h1>
 							</div>
 							<div class="card-content">
 								<figure class="image">
-									<img src="/images/profiles/evan-nishi.png" class="is-rounded card-image centered-image">
 								</figure>
 							</div>
 							<div class="card-footer">
-								<a class="card-footer-item" href="mailto:claire@angelhacks.org"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email</a>
-								<a class="card-footer-item" href="https://github.com/ClaireBookworm"><i class="fab fa-github"></i>&nbsp;&nbsp;GitHub</a>
+								<a class="card-footer-item" href="mailto:ryan@angelhacks.org"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email</a>
+								<a class="card-footer-item" href="https://github.com/rpcatullo"><i class="fab fa-github"></i>&nbsp;&nbsp;GitHub</a>
 							</div>
 						</div>
 					</div>
@@ -174,13 +192,12 @@
 		<footer class="footer">
 			<div class="container has-text-centered">
 				<figure class="image is-48x48 centered-image">
-					<img src="/images/transparent-logo.png" class="centered-image">
+					<img  src="/images/transparent-logo.png" class="centered-image">
 				</figure>
 				<br>
 				<p class="title is-5">AngelHacks 2019</p>
-				<p class="title is-6">Look under the hood at <a href="https://github.com/ClaireBookworm/angelhacks">our GitHub</a></p>
-				<p class="title is-6">Have any questions? Contact us at <a href="mailto:support@angelhacks.org">support@angelhacks.org</a></p>
-				<p class="title is-6">Licensed under MIT</p>
+				<p class="title is-size-6"> Have any questions? Contact us at <a href="mailto:support@angelhacks.org">support@angelhacks.org</a>. </p>
+				<p class="title is-6">Look under the hood at <a href="https://github.com/ClaireBookworm/angelhacks">our GitHub</a>. Licensed under MIT</p>
 			</div>
 		</footer>
 		<div class="modal sign-in">
@@ -212,12 +229,12 @@
 				</footer>
 			</div>
 		</div>
-		<script src="/js/cookie.js"></script>
-		<script src="/js/set-loading.js"></script>
-		<script src="/js/navbar-auth-buttons.js"></script>
+		<script src="/js/cookie.js" ></script>
+		<script src="/js/set-loading.js" ></script>
+		<script  src="/js/navbar-auth-buttons.js"></script>
 		<script src="/js/toggle-navbar-burger.js"></script>
 		<script src="/js/smooth-scroll.js"></script>
-		<script src="/js/particles.js"></script>
+		<script  src="/js/particles.js"></script>
 		<script src="/js/sign-out.js"></script>
 		<script src="/js/index.js"></script>
 	</body>
