@@ -1,5 +1,0 @@
-./clean -f
-./build
-(cd functions && tsc -watch && cd ..) &
-firebase serve "$@"
-./clean
