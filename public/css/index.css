@@ -1,3 +1,9 @@
+.sign-button {
+	background-image: linear-gradient(to right, red, blue);
+}
+
+/***********/
+
 .navbar {
 	opacity: 0.85;
 }
