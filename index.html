@@ -12,16 +12,22 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <style>
         @font-face {
-            font-family: "SF Pro Black";
-            src: url("fonts/SF-Pro-Text-Black.otf") format("otf"),
+            font-family: 'SF Pro Heavy';
+            src: local("SF Pro Heavy"), url('./fonts/sf-pro-text-heavy-webfont.woff2') format('woff2'),
+                url('./fonts/sf-pro-text-heavy-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
         @font-face {
-            font-family: "SF Pro";
-            src: url("fonts/SF-Pro-Text-Light.otf") format("otf"),
+            font-family: 'SF Pro';
+            src: local("SF Pro Regular"), url('./fonts/sf-pro-text-regular-webfont.woff2') format('woff2'),
+                url('./fonts/sf-pro-text-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
         .custom-header {
-            font-family: 'SF Pro Black', Avenir;
-            
+            font-family: 'SF Pro Heavy', Avenir;
+            font-size: 5em;
         }
         body {
             font-family: 'SF Pro';
@@ -105,7 +111,8 @@
         </div>
         </div>
     </section>
-    <section id="faq" class="hero is-medium">
+    <section id="faq" class="hero is-dark is-medium">
+        <h1 class="custom-header has-text-centered">Frequently Asked Questions</h1>
         <div class="columns">
             <div class=column>
                 FAQ Question 11
@@ -120,7 +127,7 @@
     </section>
     <section id="team" class="hero is-dark" style="background-color: #eb5f48 !important;">
         <div class="hero-body has-text-centered">
-            <h1 class="title our-team-title" style="font-family: 'SF Pro Black'">Our Team</h1>
+            <h1 class="title our-team-title custom-header">Our Team</h1>
             <div class="columns is-multiline">
                 <div class="column is-4">
                     <div class="card">
