@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+    <head>
+        <title>AngelHacks</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="icon" href="./images/transparent-logo.png">
+        <style>
+            @font-face {
+                font-family: 'SF Pro Heavy';
+                src: local("SF Pro Heavy"), url('./fonts/sf-pro-text-heavy-webfont.woff2') format('woff2'),
+                    url('./fonts/sf-pro-text-heavy-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'SF Pro';
+                src: local("SF Pro Regular"), url('./fonts/sf-pro-text-regular-webfont.woff2') format('woff2'),
+                    url('./fonts/sf-pro-text-regular-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            .custom-header {
+                font-family: 'SF Pro Heavy', Avenir;
+                font-size: 5em;
+            }
+            body {
+                font-family: 'SF Pro';
+            }
+            .block {
+                background-color:rgb(88,203,164);
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar is-light is-fixed-top" style="opacity: 0.85; ">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img src="./images/transparent-logo.png">
+                </a>
+                <a id="nav-toggle" class="navbar-burger burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                    </div>
+                    <div class="navbar-menu" style="opacity: 0.85; ">
+                        <div class="navbar-start">
+                            <a data-scroll href="#particles-js" class="navbar-item">
+                                Home
+                            </a>
+                            <a data-scroll href="index.html#schedule" class="navbar-item">
+                                Schedule
+                            </a>
+                            <a data-scroll href="index.html#team" class="navbar-item">The Team</a>
+                        </div>
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <a data-scroll href="signup.html" class="button is-outlined is-dark">Sign Up</a>
+                            </div>
+                            <div class="navbar-item">
+                                <a data-scroll href="https://discord.gg/cC9wmfM" class="button is-outlined is-dark">Join the Server!</a>
+                            </div>
+                        </div>
+            </div>
+        </nav>
+        <section id="tiers" class="hero is-dark">
+            <div class="hero-body">
+                <h1 class=" title custom-header has-text-centered">Sponsorship Tiers</h1>
+                <div class="columns">
+                    <div class="column block">
+                        Cherubs &#128124
+                    </div>
+                    <div class="column block">
+                        Angels &#128519
+                    </div>
+                    <div class="column block">
+                        Megatrons
+                    </div>
+                    <div class="column block">
+                        Seraphs
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

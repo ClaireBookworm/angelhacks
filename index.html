@@ -25,6 +25,13 @@
             font-weight: normal;
             font-style: normal;
         }
+        @font-face {
+            font-family: 'SF Pro Bold';
+            src: local("SF Pro Display Bold"), url('./fonts/sf-pro-display-bold-webfont.woff2') format('woff2'),
+                url('./fonts/sf-pro-display-bold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
         .custom-header {
             font-family: 'SF Pro Heavy', Avenir;
             font-size: 5em;
@@ -59,6 +66,15 @@
         }
         .sign-button {
             background-image: linear-gradient(to right, red, blue);
+        }
+        .faq-question {
+            font-family: 'SF Pro Bold';
+            color:#ffffff;
+            font-size: 2em;
+        }
+        .block {
+            background-color:rgb(88,203,164);
+            border-radius: 25px;
         }
     </style>
 </head>
@@ -111,11 +127,22 @@
         </div>
         </div>
     </section>
-    <section id="faq" class="hero is-dark is-medium">
-        <h1 class="custom-header has-text-centered">Frequently Asked Questions</h1>
-        <div class="columns">
-            <div class=column>
-                FAQ Question 11
+    <section id="faq" class="hero is-dark">
+        <div class="hero-body">
+            <h1 class="title custom-header has-text-centered">Frequently Asked Questions</h1>
+            <div class="columns is-multiline is-mobile">
+                <div class="column block is-half">
+                    <h1 class="faq-question">What Do I Pay? &#128176</h1>
+                    <p style="font-weight: 10px">Nothing! AngelHacks is 100% free, and we provide meals, snacks, swags, workshops, and other perks!</p>
+                </div>
+                <div class="column block is-half">
+                    <h1 class="faq-question">Who Can Participate? &#128187</h1>
+                    <p>Any middle school or high school student is allowed to participate! And even if you're not in that age range, we're open to mentors or younger students, so please email us at hello@angelhacks.org!</p>
+                </div>
+                <div class="column block is-half">
+                    <h1 class="faq-question">What if I don't know how to code? &#128118</h1>
+                    <p>The goal of AngelHacks is to encourage computer science education, so, if you're a complete beginner, that's fine and dandy! We'll have mentors and workshops for you to learn the tools you'll need for you project.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -123,6 +150,20 @@
         <div class="hero-body has-text-centered">
             <h1 class="title has-text-white">Schedule/Sponsors/Food/Prizes</h1>
             <p class="subtitle has-text-white">Coming Soon...</p>
+        </div>
+    </section>
+    <section id="sponsors" class="hero is-medium">
+        <div class="hero-body">
+            <h1 class="title custom-header has-text-centered">Our Sponsors</h1>
+            <p class="has-text-centered">Interested in sponsoring? Go <a href="sponsor.html">here</a> to learn more!</p><br>
+            <div class="columns">
+                <div class="column">
+                    <img src="https://media.balsamiq.com/files/company/balsamiq-logo-noborder-screen.png" alt="balsamiq" width="200px">
+                </div>
+                <div class="column">
+                    <img src="./images/sketch-logo.png" alt="sketch" width="200px">
+                </div>
+            </div>
         </div>
     </section>
     <section id="team" class="hero is-dark" style="background-color: #eb5f48 !important;">
