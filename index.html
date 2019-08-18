@@ -71,9 +71,10 @@
             font-family: 'SF Pro Bold';
             color:#ffffff;
             font-size: 2em;
+            text-transform: capitalize;
         }
         .block {
-            background-color:rgb(88,203,164);
+            /*background-color:rgb(88,203,164);*/
             border-radius: 25px;
         }
     </style>
@@ -115,44 +116,44 @@
             </div>
         </div>
     </nav>
-    <section class="hero" id="particles-js" style="height:100vh;width:100vw; background-image: linear-gradient(to right, rgb(255,171,240,0.5), rgb(41,199,255,0.5)) !important;">
+    <section class="hero" id="particles-js" style=" background-image: linear-gradient(to right, rgb(255,171,240,0.5), rgb(41,199,255,0.5)) !important;">
         <div class="hero-body has-text-centered">
-            <figure class="img is3by4 img-center" style="max-width:700px !important;">
-                <img src="./images/transparent-logo-with-text.png">
+            <figure class="img is3by4 img-center hero-head" style="max-width:700px !important;">
+                <img src="./images/transparent-logo.png">
             </figure>
+            <h1 class="custom-header"><span style="color:#EB5F48">Angel</span><span style="color:#486D79">Hacks</span></h1>
             <p class="title is-5">A high school-focused hackathon working to give back to the Los Angeles community</p>
             <br><br>
             <p>AngelHacks strives to empower students to make a difference by</p>
-	    <p>working together to solve LA's most pressing problems.</p>
-        </div>
+	    <p class="hero-foot">working together to solve LA's most pressing problems.</p>
         </div>
     </section>
     <section id="faq" class="hero is-dark">
         <div class="hero-body">
-            <h1 class="title custom-header has-text-centered">Frequently Asked Questions</h1>
-            <div class="columns is-multiline is-mobile">
-                <div class="column block is-half">
-                    <h1 class="faq-question">What Do I Pay? &#128176</h1>
+            <h1 class="title custom-header has-text-centered" style="text-decoration:underline;">Frequently Asked Questions</h1>
+            <div class="columns is-multiline is-3">
+                <div class="column is-half">
+                    <h1 class="faq-question">Does this cost anything? &#128176</h1>
                     <p style="font-weight: 10px">Nothing! AngelHacks is 100% free, and we provide meals, snacks, swags, workshops, and other perks!</p>
                 </div>
                 <div class="column block is-half">
                     <h1 class="faq-question">Who Can Participate? &#128187</h1>
-                    <p>Any middle school or high school student is allowed to participate! And even if you're not in that age range, we're open to mentors or younger students, so please email us at hello@angelhacks.org!</p>
+                    <p>Any middle school or high school student is allowed to participate! And even if you're not in that age range, we're open to mentors or younger students, so please email us at <span style="text-decoration:underline" >hello@angelhacks.org!</spam></p>
                 </div>
-                <div class="column block is-half">
+                <div class="column is-half">
                     <h1 class="faq-question">What if I don't know how to code? &#128118</h1>
                     <p>The goal of AngelHacks is to encourage computer science education, so, if you're a complete beginner, that's fine and dandy! We'll have mentors and workshops for you to learn the tools you'll need for you project.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="schedule" class="hero is-medium" style="background-color: #689dae !important;">
+    <section id="schedule" class="hero is-medium" style="background-color: #EB5F48 !important;">
         <div class="hero-body has-text-centered">
-            <h1 class="title has-text-white">Schedule/Sponsors/Food/Prizes</h1>
+            <h1 class="title custom-header has-text-white">Schedule/Sponsors/Food/Prizes</h1>
             <p class="subtitle has-text-white">Coming Soon...</p>
         </div>
     </section>
-    <section id="sponsors" class="hero is-dark is-medium">
+    <section id="sponsors" class="hero is-medium" style="background-color: #d4d4d4 !important">
         <div class="hero-body">
             <h1 class="title custom-header has-text-centered">Our Sponsors</h1>
             <p class="has-text-centered">Interested in sponsoring? Go <a href="sponsor.html">here</a> to learn more!</p><br>
@@ -172,7 +173,7 @@
             </div>
         </div>
     </section>
-    <section id="team" class="hero is-dark" style="background-color: #eb5f48 !important;">
+    <section id="team" class="hero is-dark" style="background-color: rgb(25, 79, 146) !important;">
         <style>
             *, *:before, *:after{
                 margin: 0;
@@ -303,7 +304,7 @@
                 <div class="column container is-one-quarter">
                     <div class="content">
                         <div class="content-overlay"></div>
-                            <img class="content-image is-square" src="images/profiles/claire.jpg" height="300px">
+                            <img class="content-image is-square" src="images/profiles/claire2.jpg" height="300px">
                             <div class="content-details fadeIn-bottom">
                               <h3 class="content-title">Claire Wang</h3>
                               <p class="content-text">Executive Director</p>
@@ -333,7 +334,7 @@
             </div>
             <br>
             <p style="font-size: 1.75em">Awesome people from other HackClubs!</p><br>
-            <div class="columns">
+            <div class="columns is-gapless">
                 <div class="column container is-one-quarter">
                     <div class="content">
                         <div class="content-overlay"></div>
