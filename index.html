@@ -110,7 +110,7 @@
                     <a data-scroll href="signup.html" class="button is-outlined is-dark">Sign Up</a>
                 </div>
                 <div class="navbar-item">
-                    <a data-scroll href="https://discord.gg/cC9wmfM" class="button is-outlined is-dark">Join the Server!</a>
+                    <a data-scroll href="https://join.slack.com/t/angelhacks-la/shared_invite/enQtNjk0NTYyMTU0NzA1LTQ2ZjZmOTk1ZTRiMjMzNWE4NWQ4ZTFiZjA5Mzg5M2ZkNzkyNWZlYTI3NzE2OTQ2OTBjZWI2NDdhZjdhOTUzOWU" class="button is-outlined is-dark">Join our Slack!</a>
                 </div>
             </div>
         </div>
@@ -152,93 +152,214 @@
             <p class="subtitle has-text-white">Coming Soon...</p>
         </div>
     </section>
-    <section id="sponsors" class="hero is-medium">
+    <section id="sponsors" class="hero is-dark is-medium">
         <div class="hero-body">
             <h1 class="title custom-header has-text-centered">Our Sponsors</h1>
             <p class="has-text-centered">Interested in sponsoring? Go <a href="sponsor.html">here</a> to learn more!</p><br>
-            <div class="columns">
+            <div class="columns is-mobile">
                 <div class="column">
                     <img src="https://media.balsamiq.com/files/company/balsamiq-logo-noborder-screen.png" alt="balsamiq" width="200px">
                 </div>
                 <div class="column">
                     <img src="./images/sketch-logo.png" alt="sketch" width="200px">
                 </div>
+                <div class="column">
+                    <img src="./images/replit-logo.png" alt="repl.it" width="200px">
+                </div>
+                <div class="column">
+                    <img src="./images/frank-logo.png" alt="frank.ly" width="200px">
+                </div>
             </div>
         </div>
     </section>
     <section id="team" class="hero is-dark" style="background-color: #eb5f48 !important;">
+        <style>
+            *, *:before, *:after{
+                margin: 0;
+                padding: 0;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing:border-box;
+                box-sizing: border-box;
+            }
+
+            .main-title{
+            color: #2d2d2d;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 0.7em 0;
+            }
+
+            .container{
+            padding: 1em 0;
+            float: left;
+            width: 50%;
+            }
+            @media screen and (max-width: 640px){
+            .container{
+                display: block;
+                width: 100%;
+            }
+            }
+
+            @media screen and (min-width: 900px){
+            .container{
+                width: 33.33333%;
+            }
+            }
+
+            .container .title{
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 10px;
+            }
+
+            .content {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            overflow: hidden;
+            }
+
+            .content .content-overlay {
+            background: rgba(0,0,0,0.7);
+            position: absolute;
+            height: 99%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
+            }
+
+            .content:hover .content-overlay{
+            opacity: 1;
+            }
+
+            .content-image{
+            width: 100%;
+            }
+
+            .content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+            }
+
+            .content:hover .content-details{
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+            }
+
+            .content-details h3{
+                color: #fff;
+                font-weight: 500;
+                letter-spacing: 0.15em;
+                margin-bottom: 0.5em;
+                text-transform: uppercase;
+            }
+
+            .content-details p{
+            color: #fff;
+            font-size: 0.8em;
+            }
+
+            .fadeIn-bottom{
+            top: 80%;
+            }
+
+            .fadeIn-top{
+            top: 20%;
+            }
+
+            .fadeIn-left{
+            left: 20%;
+            }
+
+            .fadeIn-right{
+            left: 80%;
+            }
+        </style>
         <div class="hero-body has-text-centered">
             <h1 class="title our-team-title custom-header">Our Team</h1>
+            <p>AngelHacks is primarily run by Ad Astra Hack Club</p>
             <div class="columns is-multiline">
-                <div class="column is-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h1 class="card-header-title">
-                                Claire Wang -- Executive Director
-                            </h1>
-                        </div>
-                        <div class="card-content">
-                            <figure class="image img-center" >
-				    <img src="images/profiles/claire.jpg" class="is-rounded img-center" style="width:150px;height:200px;">
-                            </figure>
-                        </div>
-                        <div class="card-footer">
-                            <a class="card-footer-item" href="mailto:claire@angelhacks.org"><i class="fas fa-envelope"
-                                    style="margin-right: 10px"></i>Email</a>
-                            <a class="card-footer-item" href="https://github.com/ClaireBookworm"><i class="fab fa-github"
-                                    style="margin-right: 10px"></i>GitHub</a>
+                <div class="column container is-3">
+                    <div class="content">
+                        <div class="content-overlay"></div>
+                            <img class="content-image" src="images/profiles/claire.jpg">
+                            <div class="content-details fadeIn-bottom">
+                              <h3 class="content-title">Claire Wang</h3>
+                              <p class="content-text">Executive Director</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="column is-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h1 class="card-header-title">Neel Redkar - Tech Coordinator</h1>
-                        </div>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img src="./images/profiles/neel.jpg" class="is-rounded img-center" style="width:250px;height:200px;">
-                            </figure>
-                        </div>
-                        <div class="card-footer">
-                            <a class="card-footer-item" href="mailto:neel.redkar@outlook.com"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email</a>
-                            <a class="card-footer-item" href="https://github.com/hacker719"><i class="fab fa-github"></i>&nbsp;&nbsp;GitHub</a>
-                            <a class="card-footer-item" href="https://neelredkar.tech"><i class="fas fa-link"></i>&nbsp;&nbsp;Website</a>
+                <div class="column container is-3">
+                    <div class="content">
+                        <div class="content-overlay"></div>
+                            <img class="content-image" src="images/profiles/kai.png">
+                            <div class="content-details fadeIn-bottom">
+                              <h3 class="content-title">Kai Musk</h3>
+                              <p class="content-text">Executive Director</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="column is-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h1 class="card-header-title">Ryan Catullo - Financial Coordinator</h1>
-                        </div>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img class="is-rounded img-center" src="https://www.petmd.com/sites/default/files/petmd-puppy-weight.jpg" style="height:200px;width:200px;">
-                            </figure>
-                        </div>
-                        <div class="card-footer">
-                            <a class="card-footer-item" href="mailto:ryan@angelhacks.org"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email</a>
-                            <a class="card-footer-item" href="https://github.com/rpcatullo"><i class="fab fa-github"></i>&nbsp;&nbsp;GitHub</a>
+                <div class="column container is-3">
+                    <div class="content">
+                        <div class="content-overlay"></div>
+                            <img class="content-image" src="images/profiles/damian.jpg">
+                            <div class="content-details fadeIn-bottom">
+                              <h3 class="content-title">Damian Musk</h3>
+                              <p class="content-text">Executive Director</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="column is-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h1 class="card-header-title">Yasper De Jong - Regional Coordinator</h1>
-                        </div>
-                        <div class="card-content">
-                            <figure class="image">
-                                <img src="./images/profiles/yasper.jpg" class="is-rounded img-center" style="height:200px;width:200px">
-                            </figure>
-                        </div>
-                        <div class="card-footer">
-                            <a class="card-footer-item" href="mailto:eyasperdejong@gmail.com"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email</a>
-                            <a class="card-footer-item" href="https://github.com/y-dejong"><i class="fab fa-github"></i>&nbsp;&nbsp;GitHub</a>
+                <div class="column container is-3">
+                    <div class="content">
+                        <div class="content-overlay"></div>
+                            <img class="content-image" src="./images/profiles/neel.jpg">
+                            <div class="content-details fadeIn-top">
+                              <h3 class="content-title">Neel Redkar</h3>
+                              <p class="content-text">Tech Coordinator</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <div class="column container is-3">
+                    <div class="content">
+                        <div class="content-overlay"></div>
+                            <img class="content-image" src="https://www.petmd.com/sites/default/files/petmd-puppy-weight.jpg">
+                            <div class="content-details fadeIn-top">
+                              <h3 class="content-title">Ryan Catullo</h3>
+                              <p class="content-text">Content Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="column container is-3">
+                    <div class="content">
+                        <div class="content-overlay"></div>
+                            <img class="content-image" src="./images/profiles/yasper.jpg">
+                            <div class="content-details fadeIn-top">
+                              <h3 class="content-title">Yasper DeJong</h3>
+                              <p class="content-text">Regional Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -248,8 +369,7 @@
                 <img src="./images/transparent-logo.png">
             </figure>
             <p class="title is-5">AngelHacks 2019</p>
-            <p class="title is-6">Look under the hood at <a href="https://github.com/ClaireBookworm/angelhacks">our
-                    GitHub</a></p>
+            <p class="title is-6">Look under the hood at <a href="https://github.com/ClaireBookworm/angelhacks">our GitHub</a></p>
             <p class="title is-6">Have any questions? Contact us at <a
                     href="mailto:claire@angelhacks.org">claire@angelhacks.org</a></p>
             <p class="title is-6">Licensed under GPLv3</p>
