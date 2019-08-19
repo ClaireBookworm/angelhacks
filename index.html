@@ -61,9 +61,6 @@
             overflow: auto;
             min-height: calc(100vh);
         }
-        .hero.is-fullheight.has-fixed-navbar {
-            min-height: calc(100vh - 30px);
-        }
         .particles-js-canvas-el {
             height: 150% !important;
         }
@@ -168,21 +165,22 @@
             </div>
         </div>
     </nav>
-    <section class="hero" id="particles-js" style="background-color:rgba(255, 255, 255, 0.75) !important;">
-        <div class="hero-body has-text-centered welcome-text is-fulheight">
+    <section class="hero is-large" id="particles-js" style="background-color:rgba(255, 255, 255, 0.75) !important;">
+        <div class="hero-body has-text-centered welcome-text">
             <figure class="img is3by4 img-center hero-head" style="max-width:200px !important;">
                 <img src="./images/transparent-logo.png">
             </figure>
-            <h1 class="custom-header"><span style="color:#EB5F48">Angel</span><span style="color:#486D79">Hacks</span></h1>
-            <h1 class="title" style="margin-right: 28rem; margin-left: 28rem; font-size: 2em; font-weight: 1000; font-family: Avenir;">Middle and high schoolers welcome: make a dent in the world in 12 hours.</h1>
-            <h2 style="font-family: 'SF Pro'; font-size: 1.1em; color: gray" class="title">October 26, 2019 @Snapchat Headquarters, 12 hours<br><span style="font-size: 1.5em; color: black;">What can <i>you</i> make?</span></h2><br></p>
-            <button onclick="window.location.href='signup.html'"class="button sign-button is-medium hero-footer"><span>FIND OUT!</span></button><br>
+            <h1 class="custom-header"><span style="color:#EB5F48">Angel</span><span style="color:#486D79">Hacks</span><br></h1>
+            <h1 class="title" style="font-size: 2em; font-weight: 100; font-family: Avenir;">Middle and high schoolers welcome: make a dent in the world in 12 hours.</h1>
+            <h2 style="font-family: 'SF Pro'; font-size: 1.1em; color: gray" class="title">October 26, 2019 @Snapchat Headquarters, 12 hours<br><br><span style="font-size: 1.5em; color: black;">What can <i>you</i> make?</span></h2><br></p>
+            <button onclick="window.location.href='signup.html'"class="button sign-button is-medium"><span>FIND OUT!</span></button><br>
+            <div class="hero-foot"></div>
         </div>
     </section>
-    <section id="event" class="hero is-dark" style="background-color:rgba(39, 84, 140, 0.70) !important">
-        <div class="hero-body">
-            <h1 class="title custom-header has-text-centered" style="font-size:5em !important; padding: 20px;">About AngelHacks</h1>
-            <p style="margin-left: 5em;" class="custom-par">AngelHacks is a 12-hour hackathon devoted to giving students the best experience ever and encourage them to learn computer science in school and otherwise!</p><br><p>The hackathon is located at Snapchat Headquarters</p><br>
+    <section id="event" class="hero" style="background-image:linear-gradient(rgba(39,84,140, 0.3),rgb(30, 43, 87))!important">
+        <div class="hero-body" style="color: white">
+            <h1 class="title custom-header has-text-centered" style="font-size:5em !important; padding: 20px; color: white">About AngelHacks</h1>
+            <p style="margin-left: 5em; color: white" class="custom-par">AngelHacks is a 12-hour hackathon devoted to giving students the best experience ever and encourage them to learn computer science in school and otherwise!<br><br>If you're ever excited about <span>PYTHON</span>, <span>PROGRAMMING</span>, or <span>CREATING</span>, check us out!</p><br><br><br>
         </div>
     </section>
     <section id="faq" class="hero is-dark">
@@ -222,18 +220,24 @@
         <div class="hero-body">
             <h1 class="title custom-header has-text-centered">Our Sponsors</h1>
             <p class="has-text-centered">Interested in sponsoring? Go <a href="sponsor.html">here</a> to learn more!</p><br>
-            <div class="columns is-mobile">
-                <div class="column">
-                    <img src="https://media.balsamiq.com/files/company/balsamiq-logo-noborder-screen.png" alt="balsamiq" width="200px">
+            <div class="columns is-mobile is-multiline" style="margin:100px;">
+                <div class="column is-one-third">
+                    <img src="./images/balsamiq-logo.png" alt="balsamiq" style="min-width: 500px">
                 </div>
-                <div class="column">
-                    <img src="./images/sketch-logo.png" alt="sketch" width="200px">
+                <div class="column is-one-third">
+                    <img src="./images/sketch-logo.png" alt="sketch" style="max-width: 500px">
                 </div>
-                <div class="column">
-                    <img src="./images/replit-logo.png" alt="repl.it" width="200px">
+                <div class="column is-one-third">
+                    <img src="./images/replit-logo.png" alt="repl.it" style="max-width: 500px">
                 </div>
-                <div class="column">
-                    <img src="./images/frank-logo.png" alt="frank.ly" width="200px">
+                <div class="column is-one-third">
+                    <img src="./images/frank-logo.png" alt="frank.ly" style="max-width: 500px">
+                </div>
+                <div class="column is-one-third">
+                    <img src="./images/hackbank-light.png" alt="HackClub Bank" style="max-width: 500px">
+                </div>
+                <div class="column is-one-third">
+                    <img src="./images/spacex-logo.png" alt="SpaceX" style="max-width: 500px">
                 </div>
             </div>
         </div>
@@ -450,7 +454,7 @@
     <footer style="display:flex" class="footer is-dark">
         <div class="container has-text-centered" style="text-align:center;">
             <figure class="image is-48x48 img-center">
-                <img src="./images/tra-nsparent-logo.png">
+                <img src="./images/transparent-logo.png">
             </figure>
             <p class="title is-5">AngelHacks 2019</p>
             <p class="title is-6">Look under the hood at <a href="https://github.com/ClaireBookworm/angelhacks">our GitHub</a></p>
