@@ -34,7 +34,7 @@
         }
         .custom-header {
             font-family: 'SF Pro Heavy', Avenir;
-            font-size: 5em;
+            font-size: 4.5em;
         }
         body {
             font-family: 'SF Pro';
@@ -50,23 +50,26 @@
 
         #particles-js canvas {
             position: absolute;
-            height: 100%;
+            margin-top: 0;
+            height: 0;
+            width: 100%;
             z-index: -1;
             background-image: url(images/cartoon.jpg)!important;
 	        /*background-position:center;*/
             background-position:left;
 	        background-size:cover;
+            overflow: auto;
+            min-height: calc(100vh);
         }
-
+        .hero.is-fullheight.has-fixed-navbar {
+            min-height: calc(100vh - 30px);
+        }
         .particles-js-canvas-el {
             height: 150% !important;
         }
         .card-image {
             width:150px;
             height:200px;
-        }
-        .sign-button {
-            background-image: linear-gradient(to right, red, blue);
         }
         .faq-question {
             font-family: 'SF Pro Bold';
@@ -85,11 +88,54 @@
         footer {
             display: flex;
         }
+        .sign-button {
+            /*background-image: linear-gradient(to right, #4b6cb7, #182848);*/
+            background-color: #238e8c;
+            color:white;
+            font-family: 'SF Pro Heavy';
+            font-size: 1.5em;
+            cursor: pointer;
+            border: none;
+            transition: all 0.5s;
+        }
+        .button span {
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .sign-button span:after {
+            content:"\00bb";
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .sign-button:hover span{
+            /*background-image: linear-gradient(to right, #ffeeee, #ddefbb);*/
+            padding-right: 25px;
+        }
+        .sign-button:hover {
+            background-image: linear-gradient(to right, #ec6f66, #f3a183);
+            box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+            -webkit-transform: translateX(-5px);
+            transform: translateX(-5px;)
+        }
+        .sign-button:hover span:after {
+            opacity: 1;
+            right: 0;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar is-light is-fixed-top" style="opacity: 0.85; ">
+    <nav class="navbar is-light is-fixed-top has-fixed-navbar" style="opacity: 0.85; ">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
                 <img src="./images/transparent-logo.png">
@@ -111,9 +157,7 @@
                 <a data-scroll href="#team" class="navbar-item">
                     The Team
                 </a>
-
             </div>
-
             <div class="navbar-end">
                 <div class="navbar-item">
                     <a data-scroll href="signup.html" class="button is-outlined is-dark">Sign Up</a>
@@ -124,25 +168,26 @@
             </div>
         </div>
     </nav>
-    <section class="hero" id="particles-js" style="background-color:rgba(255, 255, 255, 0.5) !important;">
-        <div class="hero-body has-text-centered welcome-text">
+    <section class="hero" id="particles-js" style="background-color:rgba(255, 255, 255, 0.75) !important;">
+        <div class="hero-body has-text-centered welcome-text is-fulheight">
             <figure class="img is3by4 img-center hero-head" style="max-width:200px !important;">
                 <img src="./images/transparent-logo.png">
             </figure>
             <h1 class="custom-header"><span style="color:#EB5F48">Angel</span><span style="color:#486D79">Hacks</span></h1>
-            <h2 style="font-family: 'SF Pro'; font-size: 2em; text-align: right; margin-right: 30%;" class="title">October 26, 2019<br> Snapchat Headquarters<br>12 hours<br><span style="font-size: 1.5em;">What can <i>you</i> make?</span></h2><br></p>
-            <button onclick="window.location.href='signup.html'"class="button is-primary is-medium">Find out here!</button><br><br><br>
+            <h1 class="title" style="margin-right: 28rem; margin-left: 28rem; font-size: 2em; font-weight: 1000; font-family: Avenir;">Middle and high schoolers welcome: make a dent in the world in 12 hours.</h1>
+            <h2 style="font-family: 'SF Pro'; font-size: 1.1em; color: gray" class="title">October 26, 2019 @Snapchat Headquarters, 12 hours<br><span style="font-size: 1.5em; color: black;">What can <i>you</i> make?</span></h2><br></p>
+            <button onclick="window.location.href='signup.html'"class="button sign-button is-medium hero-footer"><span>FIND OUT!</span></button><br>
         </div>
     </section>
     <section id="event" class="hero is-dark" style="background-color:rgba(39, 84, 140, 0.70) !important">
         <div class="hero-body">
-            <h1 class="title custom-header has-text-centered">About AngelHacks</h1>
-            <p style="margin-left: 5em;" class="custom-par">AngelHacks is a 12-hour hackathon devoted to giving students the best experience ever and encourage them to learn computer science in school and otherwise!</p><br><br><p>The hackathon is located at Snapchat Headquarters</p>
+            <h1 class="title custom-header has-text-centered" style="font-size:5em !important; padding: 20px;">About AngelHacks</h1>
+            <p style="margin-left: 5em;" class="custom-par">AngelHacks is a 12-hour hackathon devoted to giving students the best experience ever and encourage them to learn computer science in school and otherwise!</p><br><p>The hackathon is located at Snapchat Headquarters</p><br>
         </div>
     </section>
     <section id="faq" class="hero is-dark">
         <div class="hero-body">
-            <h1 class="title custom-header has-text-centered" style="text-decoration:underline;">Frequently Asked Questions</h1>
+            <h1 class="title custom-header has-text-centered">Frequently Asked Questions</h1>
             <div class="columns is-multiline is-5">
                 <div class="column is-half">
                     <h1 class="faq-question">Does this cost anything? &#128176</h1>
