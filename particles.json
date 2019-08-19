@@ -14,7 +14,7 @@
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#000000"
+          "color": "#ffffff"
         },
         "polygon": {
           "nb_sides": 5
@@ -26,7 +26,7 @@
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 1,
         "random": false,
         "anim": {
           "enable": false,
