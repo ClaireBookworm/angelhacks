@@ -83,11 +83,11 @@ settings = {
     "detect_on": "window",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable":false,
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
