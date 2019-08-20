@@ -65,7 +65,7 @@ settings = {
       "width": 3
     },
     "move": {
-      "enable": false,
+      "enable": true,
       "speed": 6,
       "direction": "none",
       "random": false,
